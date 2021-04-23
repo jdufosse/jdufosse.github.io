@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import MainData from '../../assets/main/data.json';
 
@@ -8,6 +9,8 @@ import MainData from '../../assets/main/data.json';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  public data : any = MainData;
+  public faCoffee = faCoffee;
 
   constructor() { }
 
