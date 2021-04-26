@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
+import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 
 import MainData from '../../assets/main/data.json';
 
@@ -9,8 +10,11 @@ import MainData from '../../assets/main/data.json';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  public data : any = MainData;
+  public data: any = MainData;
   public faCoffee = faCoffee;
+  public faStar = faStar;
+  public faStarHalfAlt = faStarHalfAlt;
+  public farStar = farStar;
 
   constructor() { }
 
