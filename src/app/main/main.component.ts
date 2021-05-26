@@ -4,10 +4,11 @@ import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 
 import MainData from '../../assets/main/data.json';
 
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
   public data: any = MainData;

@@ -2,5 +2,32 @@
   "generalInformation" :{
     "lastName": "Test",
     "firstName": "Nono"
-  }
+  },
+  "thematics":[
+    {
+      "title":"Expérience Professionnelle",
+      "experiences":[
+        {
+          "title":"Expérience Professionnelle 1",
+          "from":"2016-07",
+          "description":"Description 1",
+          "image": ""
+          
+        },
+        {
+          "title":"Expérience Professionnelle 2",
+          "to":"2016-07",
+          "from":"2013-07",
+          "description":"Description 2",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title":"Compétences",
+      "competences":[
+
+      ]
+    }
+  ]
 }
