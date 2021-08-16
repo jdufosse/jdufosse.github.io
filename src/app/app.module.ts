@@ -8,7 +8,10 @@ import { LayoutComponent } from './layout/layout.component';
 import { MainComponent } from './main/main.component';
 import { ThematicComponent } from './thematic/thematic.component';
 import { ExperienceComponent } from './experience/experience.component';
-import { CompetenceComponent } from './competence/competence.component';
+import { HobbyComponent } from './hobby/hobby.component';
+import { SkillComponent } from './skill/skill.component';
+import { FormationComponent } from './formation/formation.component';
+import { FormationsComponent } from './formations/formations.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +20,13 @@ import { CompetenceComponent } from './competence/competence.component';
     MainComponent,
     ThematicComponent,
     ExperienceComponent,
-    CompetenceComponent
+    HobbyComponent,
+    SkillComponent,
+    FormationComponent,
+    FormationsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

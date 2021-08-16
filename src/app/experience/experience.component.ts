@@ -13,11 +13,11 @@ export class ExperienceComponent implements OnInit {
   }
 
   @Input()
-  get experience(): any { return this._experience; }
-  set experience(experience: any) {
-    this._experience = experience;
+  get model(): any { return this._model; }
+  set model(model: any) {
+    this._model = model;
   }
-  private _experience = null;
+  private _model = null;
 
   @Input()
   get index(): number { return this._index; }
