@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { faFlag } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-formation',
@@ -6,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./formation.component.scss'],
 })
 export class FormationComponent implements OnInit {
+  public faFlag = faFlag;
+
   constructor() {}
 
   ngOnInit(): void {}
