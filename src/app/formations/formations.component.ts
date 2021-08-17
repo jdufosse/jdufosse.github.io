@@ -16,23 +16,25 @@ export class FormationsComponent implements OnInit {
       this.model.forEach((formation) => {
         if (
           !this._timeline.length ||
-          this._timeline[this._timeline.length - 1].title !== formation.from
+          (formation.to &&
+            this._timeline[this._timeline.length - 1].title !== formation.to)
         ) {
           this._timeline.push({
             isHeader: true,
-            title: formation.from,
+            title: formation.to,
           });
         }
 
         this._timeline.push({
           isHeader: false,
-          title: formation.from,
+          title: formation.title,
+          description: formation.description,
         });
 
-        if (formation.to) {
+        if (formation.from !== formation.to) {
           this._timeline.push({
             isHeader: true,
-            title: formation.to,
+            title: formation.from,
           });
         }
       });

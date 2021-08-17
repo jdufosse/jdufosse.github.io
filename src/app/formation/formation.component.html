@@ -1,12 +1,12 @@
 <header class="timeline-header" *ngIf="model.isHeader">
-  <span class="tag is-primary">2013</span>
+  <span class="tag is-primary">{{ model.title }}</span>
 </header>
-<div class="timeline-item is-danger" *ngIf="!model.isHeader">
-  <div class="timeline-marker is-danger is-icon">
+<div class="timeline-item" *ngIf="!model.isHeader">
+  <div class="timeline-marker is-icon">
     <i class="fa fa-flag"></i>
   </div>
   <div class="timeline-content">
-    <p class="heading">March 2017</p>
-    <p>Timeline content - Can include any HTML element</p>
+    <p class="heading">{{ model.title }}</p>
+    <p *ngIf="model.description">{{ model.description }}</p>
   </div>
 </div>
