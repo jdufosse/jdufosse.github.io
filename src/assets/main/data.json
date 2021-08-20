@@ -116,16 +116,24 @@
       "title": "Centre d'intérêts",
       "hobbies": [
         {
-          "title": "Sport"
+          "title": "Sport",
+          "imageUrl": "hobby-sport.jpg"
         },
         {
-          "title": "Jeux vidéos"
+          "title": "Jeux vidéos",
+          "imageUrl": "hobby-videogames.jpg"
         },
         {
-          "title": "Musique"
+          "title": "Musique",
+          "imageUrl": "hobby-music.jpg"
         },
         {
-          "title": "Sorties entre amis"
+          "title": "Films",
+          "imageUrl": "hobby-movies.jpg"
+        },
+        {
+          "title": "Dévelopement",
+          "imageUrl": "hobby-development.jpg"
         }
       ]
     }

@@ -1,19 +1,33 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, AfterViewInit } from '@angular/core';
+import bulmaCarousel from 'node_modules/bulma-carousel/dist/js/bulma-carousel';
+
+var carousels: any = null;
 
 @Component({
   selector: 'app-hobby',
   templateUrl: './hobby.component.html',
-  styleUrls: ['./hobby.component.scss']
+  styleUrls: ['./hobby.component.scss'],
 })
-export class HobbyComponent implements OnInit {
+export class HobbyComponent implements AfterViewInit {
+  constructor() {}
 
-  constructor() { }
+  ngAfterViewInit(): void {
+    carousels = bulmaCarousel.attach('#hobby-carousel', {
+      slidesToScroll: 1,
+      slidesToShow: 3,
+      infinite: true,
+      autoplay: true,
+    });
 
-  ngOnInit(): void {
+    if (carousels) {
+      console.debug(carousels);
+    }
   }
 
   @Input()
-  get model(): any { return this._model; }
+  get model(): any {
+    return this._model;
+  }
   set model(model: any) {
     this._model = model;
   }
