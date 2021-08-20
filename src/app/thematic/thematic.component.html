@@ -6,18 +6,18 @@
   <div class="panel-block" *ngIf="model.formations">
     <app-formations [model]="model.formations"></app-formations>
   </div>
-  <!-- <div *ngIf="model.experiences">
+  <div *ngIf="model.experiences">
     <div
       class="panel-block"
       *ngFor="let experience of model.experiences; index as i"
-    > 
-    <app-experience [model]="model.experiences"></app-experience>
+    >
+      <app-experience [model]="model.experiences"></app-experience>
     </div>
   </div>
-  <div *ngIf="model.skills">
+  <!-- <div *ngIf="model.skills">
     <app-skill [model]="model.skills"></app-skill>
-  </div>
-  <div *ngIf="model.hobbies">
+  </div>-->
+  <div *ngIf="model.hobbies" class="is-full">
     <app-hobby [model]="model.hobbies"></app-hobby>
-  </div> -->
+  </div>
 </div>
