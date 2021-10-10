@@ -1,5 +1,5 @@
 import { Component, Input, AfterViewInit } from '@angular/core';
-import bulmaCarousel from 'node_modules/bulma-carousel/dist/js/bulma-carousel';
+import bulmaCarousel from 'bulma-carousel';
 
 var carousels: any = null;
 
@@ -9,7 +9,7 @@ var carousels: any = null;
   styleUrls: ['./hobby.component.scss'],
 })
 export class HobbyComponent implements AfterViewInit {
-  constructor() {}
+  constructor() { }
 
   ngAfterViewInit(): void {
     carousels = bulmaCarousel.attach('#hobby-carousel', {
