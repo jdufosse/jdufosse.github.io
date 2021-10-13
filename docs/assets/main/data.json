@@ -1,6 +1,141 @@
 {
-  "generalInformation" :{
+  "generalInformation": {
     "lastName": "Test",
-    "firstName": "Nono"
-  }
+    "firstName": "Nono",
+    "adress": ["166 Rue des Écoles", "59182 Montigny-en-Ostrevent"],
+    "email": "jdufosse@live.fr",
+    "picture": ""
+  },
+  "thematics": [
+    {
+      "title": "Cursus",
+      "formations": [
+        {
+          "title": "Ecole d'ingénieur Polytech'Lille",
+          "from": "2008",
+          "to": "2013",
+          "description": "Génie Informatique et Statistique"
+        },
+        {
+          "title": "Classe préparatoire, Lycée Robespierre",
+          "from": "2006",
+          "to": "2008",
+          "description": "Maths sup / Maths spé"
+        },
+        {
+          "title": "Baccalauréat scientifique",
+          "from": "2006",
+          "to": "2006",
+          "description": "Option sciences de l'ingénieur - Mention Bien"
+        }
+      ]
+    },
+    {
+      "title": "Expérience Professionnelle",
+      "experiences": [
+        {
+          "title": "Expérience Professionnelle 1",
+          "from": "2016-07",
+          "description": "Description 1",
+          "image": "",
+          "missions": [
+            {
+              "title": "Orange",
+              "short-description": "Développeur au sein de l'équipe du site web la boutique d'Orange.",
+              "skills": []
+            }
+          ]
+        },
+        {
+          "title": "Expérience Professionnelle 2",
+          "to": "2016-07",
+          "from": "2013-07",
+          "description": "Description 2",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title": "Compétences",
+      "skills": [
+        {
+          "title": "Système d'exploitation",
+          "skills": [
+            {
+              "id": 1,
+              "title": "Windows",
+              "score": "4"
+            },
+            {
+              "id": 2,
+              "title": "Linux",
+              "score": "2.5"
+            }
+          ]
+        },
+        {
+          "title": "Langages",
+          "skills": [
+            {
+              "id": 3,
+              "title": "C# .Net",
+              "score": "4.5"
+            },
+            {
+              "id": 4,
+              "title": "Javascript",
+              "score": "4",
+              "skills": [
+                {
+                  "id": 5,
+                  "title": "React",
+                  "score": "3.5"
+                },
+                {
+                  "id": 6,
+                  "title": "Angular",
+                  "score": "3"
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "title": "HTML",
+              "score": "4"
+            },
+            {
+              "id": 8,
+              "title": "SQL",
+              "score": "3.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Centre d'intérêts",
+      "hobbies": [
+        {
+          "title": "Sport",
+          "imageUrl": "hobby-sport.jpg"
+        },
+        {
+          "title": "Jeux vidéos",
+          "imageUrl": "hobby-videogames.jpg"
+        },
+        {
+          "title": "Musique",
+          "imageUrl": "hobby-music.jpg"
+        },
+        {
+          "title": "Films",
+          "imageUrl": "hobby-movies.jpg"
+        },
+        {
+          "title": "Dévelopement",
+          "imageUrl": "hobby-development.jpg"
+        }
+      ]
+    }
+  ]
 }
