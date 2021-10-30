@@ -1,6 +1,32 @@
-<div>
-  <figure class="image is-64x64">
-    <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image" />
-  </figure>
-  <p>skill works!</p>
+<div [ngClass]="level ? 'skill' : 'skill card'">
+  <div [ngClass]="level ? 'skill-title' : 'skill-title card-header'">
+    <h2 *ngIf="level == 0" class="card-header-title">{{ model.title }}</h2>
+    <h3 *ngIf="level == 1">{{ model.title }}</h3>
+    <h4 *ngIf="level == 2">{{ model.title }}</h4>
+    <h5 *ngIf="level == 3">{{ model.title }}</h5>
+    <h6 *ngIf="level >= 4">{{ model.title }}</h6>
+    <div class="skill-score" *ngIf="model.score">
+      <div *ngFor="let starNumber of [0.0, 1.0, 2.0, 3.0, 4.0]">
+        <fa-icon
+          *ngIf="starNumber + 1 <= model.score"
+          [icon]="fasStar"
+        ></fa-icon>
+        <fa-icon
+          *ngIf="starNumber + 0.5 == model.score"
+          [icon]="fasStarHalfAlt"
+        ></fa-icon>
+        <fa-icon *ngIf="starNumber >= model.score" [icon]="farStar"></fa-icon>
+      </div>
+    </div>
+  </div>
+  <div
+    [ngClass]="level ? 'sub-skill' : 'sub-skill card-header'"
+    *ngIf="model.skills"
+  >
+    <app-skill
+      *ngFor="let skill of model.skills"
+      [model]="skill"
+      [level]="level + 1"
+    ></app-skill>
+  </div>
 </div>

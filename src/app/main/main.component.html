@@ -1,6 +1,6 @@
 <div class="main">
   <div class="container">
-    <div class="box">
+    <section class="box hero is-success">
       <article class="media">
         <div class="media-left">
           <figure class="image is-64x64">
@@ -12,7 +12,7 @@
         </div>
         <div class="media-content">
           <div class="content">
-            <p>main works!</p>
+            <p>{{ data.generalInformation.title }}</p>
             <div *ngIf="data.generalInformation" class="content">
               <!-- Personal information -->
               {{ data.generalInformation.lastName }}
@@ -22,9 +22,9 @@
           </div>
         </div>
       </article>
-    </div>
+    </section>
     <div class="columns">
-      <div class="column is-one-quarter">
+      <section class="column is-one-quarter">
         <article class="panel">
           <div *ngFor="let thematic of data.thematics; index as i">
             <a class="panel-block is-active">
@@ -35,16 +35,12 @@
             </a>
           </div>
         </article>
-      </div>
-      <div class="column is-three-quarters">
+      </section>
+      <section class="column is-three-quarters">
         <div *ngFor="let thematic of data.thematics; index as i">
           <app-thematic [model]="thematic" [index]="i"></app-thematic>
         </div>
-      </div>
+      </section>
     </div>
-
-    <fa-icon [icon]="faStar"></fa-icon>
-    <fa-icon [icon]="farStar"></fa-icon>
-    <fa-icon [icon]="faStarHalfAlt"></fa-icon>
   </div>
 </div>
