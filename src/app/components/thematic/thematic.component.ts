@@ -1,11 +1,15 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { faCoffee, faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCoffee,
+  faStar,
+  faStarHalfAlt,
+} from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-thematic',
   templateUrl: './thematic.component.html',
-  styleUrls: ['./thematic.component.scss']
+  styleUrls: ['./thematic.component.scss'],
 })
 export class ThematicComponent implements OnInit {
   public faCoffee = faCoffee;
@@ -13,20 +17,23 @@ export class ThematicComponent implements OnInit {
   public faStarHalfAlt = faStarHalfAlt;
   public farStar = farStar;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   @Input()
-  get model(): any { return this._model; }
+  get model(): any {
+    return this._model;
+  }
   set model(model: any) {
     this._model = model;
   }
   private _model = null;
 
   @Input()
-  get index(): number { return this._index; }
+  get index(): number {
+    return this._index;
+  }
   set index(index: number) {
     this._index = index;
   }

@@ -1,0 +1,16 @@
+.skill-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.skill-score {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+.sub-skill {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+}

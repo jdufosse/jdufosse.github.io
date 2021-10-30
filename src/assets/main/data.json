@@ -1,9 +1,8 @@
 {
   "generalInformation": {
+    "title": "Developper FullStack",
     "lastName": "Test",
     "firstName": "Nono",
-    "adress": ["166 Rue des Écoles", "59182 Montigny-en-Ostrevent"],
-    "email": "jdufosse@live.fr",
     "picture": ""
   },
   "thematics": [

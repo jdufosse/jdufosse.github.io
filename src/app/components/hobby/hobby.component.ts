@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./hobby.component.scss'],
 })
 export class HobbyComponent {
-  constructor() { }
+  constructor() {}
 
   @Input()
   get model(): any {
