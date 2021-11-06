@@ -1,14 +1,7 @@
-<div class='layout'>
-  <div class='header'>
+<div class="layout">
+  <app-header></app-header>
+  <div class="content">
+    <ng-content></ng-content>
   </div>
-  <div class='content'>
-    <app-main></app-main>
-  </div>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        This page is made with <a href="https://angular.io/"><strong>Angular</strong></a> and styled by <a href="https://bulma.io/"><strong>Bulma</strong></a>.
-      </p>
-    </div>
-  </footer>
+  <app-footer></app-footer>
 </div>

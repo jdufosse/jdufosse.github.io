@@ -29,13 +29,4 @@ export class ThematicComponent implements OnInit {
     this._model = model;
   }
   private _model = null;
-
-  @Input()
-  get index(): number {
-    return this._index;
-  }
-  set index(index: number) {
-    this._index = index;
-  }
-  private _index = 0;
 }

@@ -1,0 +1,21 @@
+<header class="container">
+  <section class="box hero is-success" *ngIf="data">
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="{{ '/assets/images/' + data.picture }}" alt="image" />
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p>{{ data.title }}</p>
+          <div *ngIf="data" class="content">
+            {{ data.lastName }}
+            <br />
+            {{ data.firstName }}
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</header>

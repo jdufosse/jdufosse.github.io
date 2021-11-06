@@ -1,20 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-import MainData from '../../assets/main/data.json';
+import MainData from '../../../assets/data.json';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
 })
-export class MainComponent implements OnInit {
-  public data: any = MainData;
+export class MainComponent {
+  public data: any = MainData.thematics;
   public faCoffee = faCoffee;
 
   constructor() {}
-
-  ngOnInit(): void {
-    console.log(MainData);
-  }
 }
