@@ -7,10 +7,7 @@
     <app-formations [model]="model.formations"></app-formations>
   </div>
   <div *ngIf="model.experiences">
-    <div
-      class="panel-block"
-      *ngFor="let experience of model.experiences; index as i"
-    >
+    <div class="panel-block" *ngFor="let experience of model.experiences">
       <app-experience [model]="model.experiences"></app-experience>
     </div>
   </div>

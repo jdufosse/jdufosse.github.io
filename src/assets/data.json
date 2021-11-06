@@ -1,13 +1,14 @@
 {
-  "generalInformation": {
+  "general": {
     "title": "Developper FullStack",
     "lastName": "Test",
     "firstName": "Nono",
-    "picture": ""
+    "picture": "angular-logo.png"
   },
   "thematics": [
     {
       "title": "Cursus",
+      "anchor": "cursus",
       "formations": [
         {
           "title": "Ecole d'ingénieur Polytech'Lille",
@@ -31,6 +32,7 @@
     },
     {
       "title": "Expérience Professionnelle",
+      "anchor": "experiences",
       "experiences": [
         {
           "title": "Expérience Professionnelle 1",
@@ -56,6 +58,7 @@
     },
     {
       "title": "Compétences",
+      "anchor": "skills",
       "skills": [
         {
           "title": "Système d'exploitation",
@@ -113,6 +116,7 @@
     },
     {
       "title": "Centre d'intérêts",
+      "anchor": "hobbies",
       "hobbies": [
         {
           "title": "Sport",
