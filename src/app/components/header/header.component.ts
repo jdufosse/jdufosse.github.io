@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
-
-import MainData from '../../../assets/data.json';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
-  public data: any = MainData.general;
+export class HeaderComponent implements OnInit {
+  public data: any = {};
 
-  constructor() {}
+  constructor(private dataService: DataService) {}
+
+  ngOnInit(): void {
+    this.data = this.dataService.getGeneral();
+  }
 }
