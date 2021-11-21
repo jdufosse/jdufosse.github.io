@@ -24,6 +24,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "angular-responsive-carousel": "^2.1.2",
     "bulma": "^0.9.3",
     "bulma-timeline": "^3.0.4",
     "rxjs": "~6.6.0",
