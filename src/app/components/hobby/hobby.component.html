@@ -1,14 +1,10 @@
 <div class="hobbies">
-  <div class="carousel-cell" *ngFor="let hobby of model">
-    <div class="card">
-      <div class="card-image">
-        <figure class="image">
-          <img src="{{ '/assets/images/' + hobby.imageUrl }}" alt="image" />
-        </figure>
-      </div>
-      <div class="card-content">
-        <div class="item__title">{{ hobby.title }}</div>
-      </div>
-    </div>
-  </div>
+  <carousel
+    [loop]="true"
+    [autoplay]="true"
+    [cellsToShow]="3"
+    [autoplayInterval]="3000"
+    [images]="images"
+  >
+  </carousel>
 </div>

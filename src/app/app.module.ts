@@ -2,11 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ThematicComponent } from './components/thematic/thematic.component';
 import { ExperienceComponent } from './components/experience/experience.component';
@@ -29,7 +29,6 @@ const routerOptions: ExtraOptions = {
   declarations: [
     AppComponent,
     MainComponent,
-    CarouselComponent,
     LayoutComponent,
     ThematicComponent,
     ExperienceComponent,
@@ -45,6 +44,7 @@ const routerOptions: ExtraOptions = {
     RouterModule.forRoot(routes, routerOptions),
     AppRoutingModule,
     FontAwesomeModule,
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
