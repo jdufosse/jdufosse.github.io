@@ -4,6 +4,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 
+// Components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
@@ -16,6 +17,9 @@ import { FormationComponent } from './components/formation/formation.component';
 import { FormationsComponent } from './components/formation/formations.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+
+// Services
+import { DataService } from './services/data.service';
 
 const routes: Routes = [];
 
@@ -46,7 +50,7 @@ const routerOptions: ExtraOptions = {
     FontAwesomeModule,
     IvyCarouselModule,
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
