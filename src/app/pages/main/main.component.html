@@ -1,25 +1,27 @@
-<div class="main container">
-  <div class="columns">
-    <section class="column is-one-quarter">
-      <article class="panel sticky-menu">
-        <div *ngFor="let thematic of data">
-          <a
-            [routerLink]="'.'"
-            [fragment]="thematic.anchor"
-            class="panel-block is-active"
-          >
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            {{ thematic.title }}
-          </a>
+<app-layout>
+  <div class="main container">
+    <div class="columns">
+      <section class="column is-one-quarter">
+        <article class="panel sticky-menu">
+          <div *ngFor="let thematic of data">
+            <a
+              [routerLink]="'.'"
+              [fragment]="thematic.anchor"
+              class="panel-block is-active"
+            >
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              {{ thematic.title }}
+            </a>
+          </div>
+        </article>
+      </section>
+      <section class="column is-three-quarters">
+        <div *ngFor="let thematic of data" [attr.id]="thematic.anchor">
+          <app-thematic [model]="thematic"></app-thematic>
         </div>
-      </article>
-    </section>
-    <section class="column is-three-quarters">
-      <div *ngFor="let thematic of data" [attr.id]="thematic.anchor">
-        <app-thematic [model]="thematic"></app-thematic>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
-</div>
+</app-layout>
