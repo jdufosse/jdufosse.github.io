@@ -8,6 +8,8 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
+import { JobComponent } from './pages/job/job.component';
+import { FourOhFourComponent } from './pages/four-oh-four/four-oh-four.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ThematicComponent } from './components/thematic/thematic.component';
 import { ExperienceComponent } from './components/experience/experience.component';
@@ -21,7 +23,12 @@ import { HeaderComponent } from './components/header/header.component';
 // Services
 import { DataService } from './services/data.service';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'experience/:id', component: JobComponent },
+  { path: '', component: MainComponent },
+  { path: 'not-found', component: FourOhFourComponent },
+  { path: '**', redirectTo: 'not-found' },
+];
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -33,6 +40,8 @@ const routerOptions: ExtraOptions = {
   declarations: [
     AppComponent,
     MainComponent,
+    JobComponent,
+    FourOhFourComponent,
     LayoutComponent,
     ThematicComponent,
     ExperienceComponent,
