@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
@@ -56,6 +57,7 @@ const routerOptions: ExtraOptions = {
     BrowserModule,
     RouterModule.forRoot(routes, routerOptions),
     AppRoutingModule,
+    HttpClientModule,
     FontAwesomeModule,
     IvyCarouselModule,
   ],
