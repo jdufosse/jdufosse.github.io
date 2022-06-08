@@ -3,16 +3,16 @@
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
-          <img src="{{ '/assets/images/' + data.picture }}" alt="image" />
+          <img src="{{ '/assets/images/' + data?.avatarUrl }}" alt="image" />
         </figure>
       </div>
       <div class="media-content">
         <div class="content">
-          <p>{{ data.title }}</p>
+          <p>{{ data?.title }}</p>
           <div *ngIf="data" class="content">
-            {{ data.lastName }}
+            {{ data?.lastName }}
             <br />
-            {{ data.firstName }}
+            {{ data?.firstName }}
           </div>
         </div>
       </div>
