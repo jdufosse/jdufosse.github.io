@@ -1,9 +1,11 @@
-declare type General = {
-  firstName: string;
-  lastName: string;
-  title?: string;
-  avatarUrl?: string;
-} | undefined;
+declare type General =
+  | {
+      firstName: string;
+      lastName: string;
+      title?: string;
+      avatarUrl?: string;
+    }
+  | undefined;
 
 declare type Thematic = {
   title: string;
@@ -14,6 +16,12 @@ declare type Thematic = {
   hobbies: Hobby[];
 };
 
+declare type PrismicItem = {
+  uid?: string;
+  isLoaded?: boolean;
+  type: string;
+};
+
 declare type Formation = {
   title: string;
   from: string;
@@ -21,7 +29,7 @@ declare type Formation = {
   description: string;
 };
 
-declare type Experience = {
+declare type Experience = PrismicItem & {
   title: string;
   from: string;
   to?: string;
@@ -30,14 +38,13 @@ declare type Experience = {
   missions: Mission[];
 };
 
-declare type Mission = {
+declare type Mission = PrismicItem & {
   title: string;
   'short-description': string;
   skills: Skill[];
 };
 
-declare type Skill = {
-  id: number;
+declare type Skill = PrismicItem & {
   title: string;
   score?: number;
   skills?: Skill[];
