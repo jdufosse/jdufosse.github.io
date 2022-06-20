@@ -1,4 +1,4 @@
-import * as model from '../types/types';
+import * as model from '../types/prismic';
 
 export class PrismicHelper {
   static GetGeneral(prismicValue: any): model.General {
@@ -14,8 +14,6 @@ export class PrismicHelper {
   }
 
   static GetThematics(prismicValue: any): model.Thematic[] {
-    console.log('GetThematics', { prismicValue });
-
     const result: model.Thematic[] = prismicValue?.data?.body?.map(
       (thematicData: any) => {
         const title = PrismicHelper.getText(thematicData.primary.title);
@@ -31,38 +29,42 @@ export class PrismicHelper {
 
         switch (thematicData.slice_type) {
           case 'cursus':
-            thematicData.items.map((item: any) => {
+            thematic.formations = thematicData.items.map((item: any) => {
               const formation = this.createFormation(item);
               if (formation) {
-                thematic.formations.push(formation);
+                return formation;
               }
+              return;
             });
             break;
 
           case 'experiences':
-            thematicData.items.map((item: any) => {
+            thematic.experiences = thematicData.items.map((item: any) => {
               const experience: model.Experience = this.createExperience(item);
               if (experience) {
-                thematic.experiences.push(experience);
+                return experience;
               }
+              return;
             });
             break;
 
           case 'skills':
-            thematicData.items.map((item: any) => {
+            thematic.skills = thematicData.items.map((item: any) => {
               const skill: model.Skill = this.createSkill(item.skill);
               if (skill) {
-                thematic.skills.push(skill);
+                return skill;
               }
+              return;
             });
             break;
 
           case 'hobbies':
-            thematicData.items.map((item: any) => {
+            thematic.hobbies = thematicData.items.map((item: any) => {
               const hobby: model.Hobby = this.createHobby(item);
               if (hobby) {
-                thematic.hobbies.push(hobby);
+                return hobby;
               }
+              return;
             });
             break;
 
@@ -80,8 +82,8 @@ export class PrismicHelper {
   private static createFormation(formationData: any): model.Formation {
     const description = PrismicHelper.getText(formationData.description);
     const title = PrismicHelper.getText(formationData.title);
-    const from = formationData.start_date;
-    const to = formationData.end_date;
+    const from = formationData.start_year;
+    const to = formationData.end_year;
 
     return { title, from, description, to };
   }
@@ -89,8 +91,8 @@ export class PrismicHelper {
   private static createExperience(experienceData: any): model.Experience {
     const description = PrismicHelper.getText(experienceData.description);
     const title = PrismicHelper.getText(experienceData.title);
-    const from = experienceData.start_date;
-    const to = experienceData.end_date;
+    const from = experienceData.start_year;
+    const to = experienceData.end_year;
 
     return {
       title,

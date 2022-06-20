@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import * as model from '../../types/prismic';
 
 @Component({
   selector: 'app-hobby',
@@ -6,32 +7,30 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./hobby.component.scss'],
 })
 export class HobbyComponent {
-  public images : any[] = [];
+  public images: any[] = [];
 
   constructor() {}
 
   updateImages() {
-    const images : any[] = [];
-    if(this._model){
-      this._model.forEach((hobby, i) =>{
+    const images: any[] = [];
+    if (this._model) {
+      this._model.forEach((hobby, i) => {
         if (hobby) {
-          images.push({path:'/assets/images/' + hobby.imageUrl});
+          images.push({ path: hobby.image });
         }
       });
     }
     this.images = images;
   }
 
-  
-
   @Input()
-  get model(): any[] {
+  get model(): model.Hobby[] {
     return this._model;
   }
-  set model(model: any[]) {
+  set model(model: model.Hobby[]) {
     this._model = model;
 
     this.updateImages();
   }
-  private _model : any[]= [];
+  private _model: model.Hobby[] = [];
 }

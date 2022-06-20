@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { faFlag } from '@fortawesome/free-solid-svg-icons';
+import * as model from '../../types/front';
 
 @Component({
   selector: 'app-formation',
@@ -14,11 +15,11 @@ export class FormationComponent implements OnInit {
   ngOnInit(): void {}
 
   @Input()
-  get model(): any {
+  get model(): model.Timeline {
     return this._model;
   }
-  set model(model: any) {
+  set model(model: model.Timeline) {
     this._model = model;
   }
-  private _model: any = null;
+  private _model: model.Timeline = { isHeader: false, title: '' };
 }

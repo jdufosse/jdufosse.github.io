@@ -1,24 +1,27 @@
-<div class="panel is-success mb-3">
+<div *ngIf="model" class="panel is-success mb-3">
   <h1 class="panel-heading">
     <fa-icon [icon]="faCoffee"></fa-icon>
     <span>{{ model.title }}</span>
   </h1>
-  <div class="panel-block" *ngIf="model.formations">
+  <div
+    class="panel-block"
+    *ngIf="model.formations && model.formations.length > 0"
+  >
     <app-formations [model]="model.formations"></app-formations>
   </div>
-  <div *ngIf="model.experiences">
+  <div *ngIf="model.experiences && model.experiences.length > 0">
     <div class="panel-block" *ngFor="let experience of model.experiences">
       <app-experience [model]="model.experiences"></app-experience>
     </div>
   </div>
-  <div *ngIf="model.skills" class="main-skills">
+  <div *ngIf="model.skills && model.skills.length > 0" class="main-skills">
     <app-skill
       *ngFor="let skill of model.skills"
       [model]="skill"
       class="main-skill"
     ></app-skill>
   </div>
-  <div *ngIf="model.hobbies" class="is-full">
+  <div *ngIf="model.hobbies && model.hobbies.length > 0" class="is-full">
     <app-hobby [model]="model.hobbies"></app-hobby>
   </div>
 </div>
