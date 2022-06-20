@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as prismic from '@prismicio/client';
-import * as model from '../types/types';
+import * as model from '../types/prismic';
 import { PrismicHelper } from '../utils/prismic.helper';
 
 @Injectable({
@@ -70,21 +70,21 @@ export class DataService {
     const common = await client.getByUID<any>('common', 'common');
     if (common) {
       this._common = PrismicHelper.GetGeneral(common);
-      this._commonCallbacks.forEach(callback =>{
-        if(callback){
+      this._commonCallbacks.forEach((callback) => {
+        if (callback) {
           callback(this._common);
         }
-      })
+      });
     }
 
     const thematics = await client.getByUID<any>('thematics', 'thematics');
     if (thematics) {
       this._thematics = PrismicHelper.GetThematics(thematics);
-      this._thematicsCallbacks.forEach(callback =>{
-        if(callback){
+      this._thematicsCallbacks.forEach((callback) => {
+        if (callback) {
           callback(this._thematics);
         }
-      })
+      });
     }
   }
 }

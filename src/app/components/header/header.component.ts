@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
-import * as model from 'src/app/types/types';
+import * as model from 'src/app/types/prismic';
 
 @Component({
   selector: 'app-header',
@@ -9,14 +9,16 @@ import * as model from 'src/app/types/types';
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   public data: model.General = undefined;
-  private _handleGeneralChangeCallback : (data: model.General) => void;
+  private _handleGeneralChangeCallback: (data: model.General) => void;
 
   constructor(private dataService: DataService) {
-    this._handleGeneralChangeCallback = this.handleGeneralChange.bind(this)
+    this._handleGeneralChangeCallback = this.handleGeneralChange.bind(this);
   }
 
   ngOnDestroy(): void {
-    this.dataService.unsubscribeGeneralChange(this._handleGeneralChangeCallback);
+    this.dataService.unsubscribeGeneralChange(
+      this._handleGeneralChangeCallback
+    );
   }
 
   ngOnInit(): void {
@@ -26,7 +28,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     console.log('HeaderComponent-ngOnInit', { data: this.data });
   }
 
-  private handleGeneralChange(data : model.General): void {
+  private handleGeneralChange(data: model.General): void {
     if (data) {
       this.data = data;
       console.log('HeaderComponent-handleGeneralChange', { data: this.data });

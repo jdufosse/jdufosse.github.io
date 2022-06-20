@@ -5,6 +5,7 @@
         <article class="panel sticky-menu">
           <div *ngFor="let thematic of data">
             <a
+              *ngIf="thematic"
               [routerLink]="'.'"
               [fragment]="thematic.anchor"
               class="panel-block is-active"
@@ -18,7 +19,7 @@
         </article>
       </section>
       <section class="column is-three-quarters">
-        <div *ngFor="let thematic of data" [attr.id]="thematic.anchor">
+        <div *ngFor="let thematic of data" [attr.id]="thematic?.anchor">
           <app-thematic [model]="thematic"></app-thematic>
         </div>
       </section>
