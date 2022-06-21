@@ -40,7 +40,9 @@ export class PrismicHelper {
 
           case 'experiences':
             thematic.experiences = thematicData.items.map((item: any) => {
-              const experience: model.Experience = this.createExperience(item);
+              const experience: model.Experience = this.createExperience(
+                item.experience
+              );
               if (experience) {
                 return experience;
               }
@@ -79,6 +81,70 @@ export class PrismicHelper {
     return result;
   }
 
+  static GetExperiences(
+    prismicValues: any,
+    missions: model.Mission[]
+  ): model.Experience[] {
+    const experiences: model.Experience[] = prismicValues.map(
+      (prismicValue: any) => {
+        return this.createExperience(prismicValue) ?? undefined;
+      }
+    );
+
+    prismicValues.forEach((prismicValue: any) => {
+      const experience = experiences.find((m) => m?.uid == prismicValue.uid);
+      if (experience && prismicValue.data.missions?.length > 0) {
+        experience.missions = prismicValue.data.missions.map((m: any) => {
+          return missions.find((m2) => m2?.uid == m.mission.uid);
+        });
+      }
+    });
+
+    console.log('GetExperiences', { prismicValues, experiences });
+
+    return experiences;
+  }
+
+  static GetMissions(
+    prismicValues: any,
+    skills: model.Skill[]
+  ): model.Mission[] {
+    const missions: model.Mission[] = prismicValues.map((prismicValue: any) => {
+      return PrismicHelper.createMission(prismicValue) ?? undefined;
+    });
+
+    prismicValues.forEach((prismicValue: any) => {
+      const mission = missions.find((m) => m?.uid == prismicValue.uid);
+      if (mission && prismicValue.data.skills?.length > 0) {
+        mission.skills = prismicValue.data.skills.map((s: any) => {
+          return skills.find((s2) => s2?.uid == s.skill.uid);
+        });
+      }
+    });
+
+    console.log('GetMissions', { prismicValues, missions });
+
+    return missions;
+  }
+
+  static GetSkills(prismicValues: any): model.Skill[] {
+    const skills: model.Skill[] = prismicValues.map((prismicValue: any) => {
+      return this.createSkill(prismicValue) ?? undefined;
+    });
+
+    prismicValues.forEach((prismicValue: any) => {
+      const skill = skills.find((s) => s?.uid == prismicValue.uid);
+      if (skill && prismicValue.data.skills?.length > 0) {
+        skill.skills = prismicValue.data.skills.map((s: any) => {
+          return skills.find((s2) => s2?.uid == s.skill.uid);
+        });
+      }
+    });
+
+    console.log('GetSkills', { prismicValues, skills });
+    return skills;
+  }
+
   private static createFormation(formationData: any): model.Formation {
     const description = PrismicHelper.getText(formationData.description);
     const title = PrismicHelper.getText(formationData.title);
@@ -89,29 +155,52 @@ export class PrismicHelper {
   }
 
   private static createExperience(experienceData: any): model.Experience {
-    const description = PrismicHelper.getText(experienceData.description);
-    const title = PrismicHelper.getText(experienceData.title);
-    const from = experienceData.start_year;
-    const to = experienceData.end_year;
+    const description = PrismicHelper.getText(experienceData.data?.description);
+    const title = PrismicHelper.getText(experienceData.data?.title);
+    const from = experienceData.data?.start_date;
+    const to = experienceData.data?.end_date;
+    const missions =
+      experienceData.data?.missions?.map((item: any) => {
+        if (item.mission) {
+          return PrismicHelper.createMission(item.mission);
+        }
+        return;
+      }) ?? [];
 
     return {
+      uid: experienceData.uid,
       title,
       description,
       from,
       to,
       missions: [],
-      isLoaded: false,
-      type: 'experience',
+      isLoaded: !!title,
+    };
+  }
+
+  private static createMission(experienceData: any): model.Mission {
+    const description = PrismicHelper.getText(experienceData.data?.description);
+    const title = PrismicHelper.getText(experienceData.data?.title);
+
+    return {
+      uid: experienceData.uid,
+      title,
+      description,
+      'short-description': '',
+      skills: [],
+      isLoaded: !!title,
     };
   }
 
   private static createSkill(skillData: any): model.Skill {
+    const title = PrismicHelper.getText(skillData.data?.title);
+    const score = skillData.data?.score / 2;
+
     return {
       uid: skillData.uid,
-      title: PrismicHelper.getText(skillData.title) ?? '',
-      score: skillData.score,
-      isLoaded: false,
-      type: 'skills',
+      title: title,
+      score,
+      isLoaded: !!title,
     };
   }
 
