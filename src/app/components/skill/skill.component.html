@@ -1,4 +1,4 @@
-<div [ngClass]="level ? 'skill' : 'skill card'">
+<div *ngIf="model" [ngClass]="level ? 'skill' : 'skill card'">
   <div [ngClass]="level ? 'skill-title' : 'skill-title card-header'">
     <h2 *ngIf="level == 0" class="card-header-title">{{ model.title }}</h2>
     <h3 *ngIf="level == 1">{{ model.title }}</h3>

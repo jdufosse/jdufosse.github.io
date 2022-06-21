@@ -4,6 +4,7 @@ import {
   faStarHalfAlt as fasStarHalfAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
+import * as model from '../../types/prismic';
 
 @Component({
   selector: 'app-skill',
@@ -20,13 +21,13 @@ export class SkillComponent implements OnInit {
   ngOnInit(): void {}
 
   @Input()
-  get model(): any {
+  get model(): model.Skill {
     return this._model;
   }
-  set model(model: any) {
+  set model(model: model.Skill) {
     this._model = model;
   }
-  private _model: any = [];
+  private _model: model.Skill = undefined;
 
   @Input()
   get level(): number {
