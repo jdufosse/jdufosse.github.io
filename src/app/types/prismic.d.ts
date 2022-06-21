@@ -21,7 +21,6 @@ declare type Thematic =
 declare type PrismicItem = {
   uid?: string;
   isLoaded?: boolean;
-  type: string;
 };
 
 declare type Formation =
@@ -48,6 +47,7 @@ declare type Mission =
   | (PrismicItem & {
       title: string;
       'short-description': string;
+      description: string;
       skills: Skill[];
     })
   | undefined;
