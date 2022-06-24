@@ -11,7 +11,10 @@
   </div>
   <div *ngIf="model.experiences && model.experiences.length > 0">
     <div class="panel-block" *ngFor="let experience of model.experiences">
-      <app-experience [model]="model.experiences"></app-experience>
+      <app-experience
+        [model]="experience"
+        class="column is-full"
+      ></app-experience>
     </div>
   </div>
   <div *ngIf="model.skills && model.skills.length > 0" class="main-skills">

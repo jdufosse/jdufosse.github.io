@@ -1,15 +1,46 @@
-<div>
-  <div>
-    <p class="title is-3">Test</p>
+<div *ngIf="model" class="card">
+  <header class="card-header">
+    <div class="card-header-title experience-title">
+      <p class="title is-4">{{ model.title }}</p>
+      <p class="title is-5">
+        {{
+          model.to
+            ? "From " +
+              dateToString(model.from) +
+              " to " +
+              dateToString(model.to)
+            : "Since " + dateToString(model.from)
+        }}
+      </p>
+    </div>
+    <button
+      class="card-header-icon"
+      aria-label="more options"
+      (click)="onToggleDisplayContent()"
+    >
+      <fa-icon [icon]="headerIcon"></fa-icon>
+    </button>
+  </header>
+  <div *ngIf="displayContent" class="card-content">
+    <div class="content">
+      <p>{{ model.description }}</p>
+      <app-mission
+        *ngFor="let mission of model.missions"
+        [model]="mission"
+      ></app-mission>
+    </div>
+  </div>
+  <!-- <div>
+    <p class="title is-3">{{ model.title }}</p>
     <p *ngIf="model.from && model.to" class="title is-5">
-      From {{ model.from }} to {{ model.to }}
+      From {{ dateToString(model.from) }} to {{ dateToString(model.to) }}
     </p>
     <p *ngIf="model.from && !model.to" class="title is-5">
-      Since {{ model.from }}
+      Since {{ dateToString(model.from) }}
     </p>
-  </div>
+  </div> -->
 
-  <article class="media">
+  <!-- <article class="media">
     <div class="media-left">
       <figure class="image is-64x64">
         <img
@@ -30,5 +61,5 @@
         </p>
       </div>
     </div>
-  </article>
+  </article> -->
 </div>

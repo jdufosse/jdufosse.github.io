@@ -1,28 +1,45 @@
 import { Component, OnInit, Input } from '@angular/core';
+import * as faIcons from '@fortawesome/free-solid-svg-icons';
+import * as model from '../../types/prismic';
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
+  styleUrls: ['./experience.component.scss'],
 })
 export class ExperienceComponent implements OnInit {
+  public displayContent = true;
+  public headerIcon = this.displayContent
+    ? faIcons['faCaretDown']
+    : faIcons['faCaretLeft'];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  dateToString(stringDate: string): string {
+    const date = new Date(stringDate);
+
+    return new Intl.DateTimeFormat('en-US', {
+      year: 'numeric',
+      month: 'long',
+    }).format(date);
+  }
+
+  onToggleDisplayContent(): any {
+    console.log('toggleDisplayContent');
+    this.displayContent = !this.displayContent;
+    this.headerIcon = this.displayContent
+      ? faIcons['faCaretDown']
+      : faIcons['faCaretLeft'];
   }
 
   @Input()
-  get model(): any { return this._model; }
-  set model(model: any) {
+  get model(): model.Experience {
+    return this._model;
+  }
+  set model(model: model.Experience) {
     this._model = model;
   }
-  private _model = null;
-
-  @Input()
-  get index(): number { return this._index; }
-  set index(index: number) {
-    this._index = index;
-  }
-  private _index = 0;
+  private _model: model.Experience = undefined;
 }

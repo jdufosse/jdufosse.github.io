@@ -14,6 +14,7 @@ import { FourOhFourComponent } from './pages/four-oh-four/four-oh-four.component
 import { LayoutComponent } from './components/layout/layout.component';
 import { ThematicComponent } from './components/thematic/thematic.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { MissionComponent } from './components/mission/mission.component';
 import { HobbyComponent } from './components/hobby/hobby.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { FormationComponent } from './components/formation/formation.component';
@@ -52,6 +53,7 @@ const routerOptions: ExtraOptions = {
     FormationsComponent,
     FooterComponent,
     HeaderComponent,
+    MissionComponent,
   ],
   imports: [
     BrowserModule,
