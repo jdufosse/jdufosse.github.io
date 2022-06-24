@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --background-color: #efefef;
+  --panel-background-color: #fafafa;
+
+  --font-color: #363636;
+  --header-font-color: #ffffff;
+
+  .dark-theme {
+    --background-color: #252525;
+    --panel-background-color: #050505;
+
+    --font-color: #d9d9d9;
+    --header-font-color: #000000;
+  }
+}
