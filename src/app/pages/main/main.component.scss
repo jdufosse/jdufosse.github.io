@@ -17,8 +17,17 @@ legend {
   padding: 2px;
 }
 
-.sticky-menu {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 1rem;
+.menu {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: block;
+    .menu__sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 120px;
+    }
+  }
 }

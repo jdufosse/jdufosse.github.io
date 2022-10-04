@@ -1,20 +1,25 @@
-<header class="container">
+<header class="container header">
   <section class="box hero is-success" *ngIf="data">
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
-          <img src="{{data?.avatarUrl}}" alt="image" />
+          <img src="{{ data?.avatarUrl }}" alt="image" />
         </figure>
       </div>
       <div class="media-content">
-        <div class="content">
-          <p>{{ data?.title }}</p>
-          <div *ngIf="data" class="content">
-            {{ data?.lastName }}
-            <br />
-            {{ data?.firstName }}
+        <div *ngIf="data" class="content">
+          <h1 class="content__title">{{ data?.title }}</h1>
+          <div class="content__name">
+            <span>{{ data?.lastName }}</span>
+            <span>{{ data?.firstName }}</span>
           </div>
         </div>
+      </div>
+      <div class="media-right">
+        <fa-icon
+          class="media-right__icon"
+          [icon]="faBars"
+        ></fa-icon>
       </div>
     </article>
   </section>

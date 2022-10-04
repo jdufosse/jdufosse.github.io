@@ -24,42 +24,12 @@
   <div *ngIf="displayContent" class="card-content">
     <div class="content">
       <p>{{ model.description }}</p>
-      <app-mission
-        *ngFor="let mission of model.missions"
-        [model]="mission"
-      ></app-mission>
-    </div>
-  </div>
-  <!-- <div>
-    <p class="title is-3">{{ model.title }}</p>
-    <p *ngIf="model.from && model.to" class="title is-5">
-      From {{ dateToString(model.from) }} to {{ dateToString(model.to) }}
-    </p>
-    <p *ngIf="model.from && !model.to" class="title is-5">
-      Since {{ dateToString(model.from) }}
-    </p>
-  </div> -->
-
-  <!-- <article class="media">
-    <div class="media-left">
-      <figure class="image is-64x64">
-        <img
-          src="https://bulma.io/images/placeholders/128x128.png"
-          alt="Image"
-        />
-      </figure>
-    </div>
-    <div class="media-content">
-      <div class="content">
-        <p>
-          <strong>John Smith</strong> <small>@johnsmith</small>
-          <small>31m</small>
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          efficitur sit amet massa fringilla egestas. Nullam condimentum luctus
-          turpis.
-        </p>
+      <div class="missions">
+        <app-mission
+          *ngFor="let mission of model.missions"
+          [model]="mission"
+        ></app-mission>
       </div>
     </div>
-  </article> -->
+  </div>
 </div>

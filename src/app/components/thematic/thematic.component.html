@@ -1,8 +1,8 @@
 <div *ngIf="model" class="panel is-success mb-3">
-  <h1 class="panel-heading">
-    <fa-icon [icon]="faCoffee"></fa-icon>
-    <span>{{ model.title }}</span>
-  </h1>
+  <h2 class="panel-heading">
+    <fa-icon class="panel-heading__icon" [icon]="faCoffee"></fa-icon>
+    <span class="panel-heading__title">{{ model.title }}</span>
+  </h2>
   <div
     class="panel-block"
     *ngIf="model.formations && model.formations.length > 0"

@@ -1,6 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 import * as model from 'src/app/types/prismic';
+import {
+  faBars,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +11,8 @@ import * as model from 'src/app/types/prismic';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit, OnDestroy {
+  public faBars = faBars;
+
   public data: model.General = undefined;
   private _handleGeneralChangeCallback: (data: model.General) => void;
 

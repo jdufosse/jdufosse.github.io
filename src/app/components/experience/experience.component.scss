@@ -2,3 +2,10 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
+.missions {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+}
