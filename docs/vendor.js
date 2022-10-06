@@ -67472,7 +67472,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "predicate": () => (/* binding */ predicate),
 /* harmony export */   "predicates": () => (/* binding */ predicates)
 /* harmony export */ });
-/* harmony import */ var D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ 9369);
+/* harmony import */ var D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ 9369);
 /* harmony import */ var _prismicio_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @prismicio/helpers */ 9361);
 
 
@@ -67787,7 +67787,7 @@ class Client {
   query(predicates, params) {
     var _this = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const url = yield _this.buildQueryURL({ ...params,
         predicates
       });
@@ -67798,7 +67798,7 @@ class Client {
   get(params) {
     var _this2 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const url = yield _this2.buildQueryURL(params);
       return yield _this2.fetch(url, params);
     })();
@@ -67807,7 +67807,7 @@ class Client {
   getFirst(params) {
     var _this3 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const url = yield _this3.buildQueryURL(params);
       const result = yield _this3.fetch(url, params);
       const firstResult = result.results[0];
@@ -67823,7 +67823,7 @@ class Client {
   dangerouslyGetAll(params = {}) {
     var _this4 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       var _a;
 
       const {
@@ -67855,7 +67855,7 @@ class Client {
   getByID(id, params) {
     var _this5 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this5.getFirst(appendPredicates(params, predicate.at("document.id", id)));
     })();
   }
@@ -67863,7 +67863,7 @@ class Client {
   getByIDs(ids, params) {
     var _this6 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this6.get(appendPredicates(params, predicate.in("document.id", ids)));
     })();
   }
@@ -67871,7 +67871,7 @@ class Client {
   getAllByIDs(ids, params) {
     var _this7 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this7.dangerouslyGetAll(appendPredicates(params, predicate.in("document.id", ids)));
     })();
   }
@@ -67879,7 +67879,7 @@ class Client {
   getByUID(documentType, uid, params) {
     var _this8 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this8.getFirst(appendPredicates(params, [typePredicate(documentType), predicate.at(`my.${documentType}.uid`, uid)]));
     })();
   }
@@ -67887,7 +67887,7 @@ class Client {
   getByUIDs(documentType, uids, params) {
     var _this9 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this9.get(appendPredicates(params, [typePredicate(documentType), predicate.in(`my.${documentType}.uid`, uids)]));
     })();
   }
@@ -67895,7 +67895,7 @@ class Client {
   getAllByUIDs(documentType, uids, params) {
     var _this10 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this10.dangerouslyGetAll(appendPredicates(params, [typePredicate(documentType), predicate.in(`my.${documentType}.uid`, uids)]));
     })();
   }
@@ -67903,7 +67903,7 @@ class Client {
   getSingle(documentType, params) {
     var _this11 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this11.getFirst(appendPredicates(params, typePredicate(documentType)));
     })();
   }
@@ -67911,7 +67911,7 @@ class Client {
   getByType(documentType, params) {
     var _this12 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this12.get(appendPredicates(params, typePredicate(documentType)));
     })();
   }
@@ -67919,7 +67919,7 @@ class Client {
   getAllByType(documentType, params) {
     var _this13 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this13.dangerouslyGetAll(appendPredicates(params, typePredicate(documentType)));
     })();
   }
@@ -67927,7 +67927,7 @@ class Client {
   getByTag(tag, params) {
     var _this14 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this14.get(appendPredicates(params, someTagsPredicate(tag)));
     })();
   }
@@ -67935,7 +67935,7 @@ class Client {
   getAllByTag(tag, params) {
     var _this15 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this15.dangerouslyGetAll(appendPredicates(params, someTagsPredicate(tag)));
     })();
   }
@@ -67943,7 +67943,7 @@ class Client {
   getByEveryTag(tags, params) {
     var _this16 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this16.get(appendPredicates(params, everyTagPredicate(tags)));
     })();
   }
@@ -67951,7 +67951,7 @@ class Client {
   getAllByEveryTag(tags, params) {
     var _this17 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this17.dangerouslyGetAll(appendPredicates(params, everyTagPredicate(tags)));
     })();
   }
@@ -67959,7 +67959,7 @@ class Client {
   getBySomeTags(tags, params) {
     var _this18 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this18.get(appendPredicates(params, someTagsPredicate(tags)));
     })();
   }
@@ -67967,7 +67967,7 @@ class Client {
   getAllBySomeTags(tags, params) {
     var _this19 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       return yield _this19.dangerouslyGetAll(appendPredicates(params, someTagsPredicate(tags)));
     })();
   }
@@ -67975,7 +67975,7 @@ class Client {
   getRepository(params) {
     var _this20 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const url = new URL(_this20.endpoint);
 
       if (_this20.accessToken) {
@@ -67989,7 +67989,7 @@ class Client {
   getRefs(params) {
     var _this21 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const repository = yield _this21.getRepository(params);
       return repository.refs;
     })();
@@ -67998,7 +67998,7 @@ class Client {
   getRefByID(id, params) {
     var _this22 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const refs = yield _this22.getRefs(params);
       return findRefByID(refs, id);
     })();
@@ -68007,7 +68007,7 @@ class Client {
   getRefByLabel(label, params) {
     var _this23 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const refs = yield _this23.getRefs(params);
       return findRefByLabel(refs, label);
     })();
@@ -68016,7 +68016,7 @@ class Client {
   getMasterRef(params) {
     var _this24 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const refs = yield _this24.getRefs(params);
       return findMasterRef(refs);
     })();
@@ -68025,7 +68025,7 @@ class Client {
   getReleases(params) {
     var _this25 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const refs = yield _this25.getRefs(params);
       return refs.filter(ref => !ref.isMasterRef);
     })();
@@ -68034,7 +68034,7 @@ class Client {
   getReleaseByID(id, params) {
     var _this26 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const releases = yield _this26.getReleases(params);
       return findRefByID(releases, id);
     })();
@@ -68043,7 +68043,7 @@ class Client {
   getReleaseByLabel(label, params) {
     var _this27 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const releases = yield _this27.getReleases(params);
       return findRefByLabel(releases, label);
     })();
@@ -68052,7 +68052,7 @@ class Client {
   getTags(params) {
     var _this28 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       try {
         const tagsForm = yield _this28.getCachedRepositoryForm("tags", params);
         return yield _this28.fetch(tagsForm.action);
@@ -68069,7 +68069,7 @@ class Client {
   } = {}) {
     var _this29 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const ref = params.ref || (yield _this29.getResolvedRefString());
       const integrationFieldsRef = params.integrationFieldsRef || (yield _this29.getCachedRepository({
         signal
@@ -68087,7 +68087,7 @@ class Client {
   resolvePreviewURL(args) {
     var _this30 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       var _a, _b;
 
       let documentID = args.documentID;
@@ -68161,7 +68161,7 @@ class Client {
   graphQLFetch(input, init) {
     var _this31 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const cachedRepository = yield _this31.getCachedRepository();
       const ref = yield _this31.getResolvedRefString();
       const unsanitizedHeaders = {
@@ -68195,7 +68195,7 @@ class Client {
   getCachedRepository(params) {
     var _this32 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       if (!_this32.cachedRepository || Date.now() >= _this32.cachedRepositoryExpiration) {
         _this32.cachedRepositoryExpiration = Date.now() + REPOSITORY_CACHE_TTL;
         _this32.cachedRepository = yield _this32.getRepository(params);
@@ -68208,7 +68208,7 @@ class Client {
   getCachedRepositoryForm(name, params) {
     var _this33 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const cachedRepository = yield _this33.getCachedRepository(params);
       const form = cachedRepository.forms[name];
 
@@ -68223,7 +68223,7 @@ class Client {
   getResolvedRefString(params) {
     var _this34 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       var _a, _b;
 
       if (_this34.refState.autoPreviewsEnabled) {
@@ -68277,7 +68277,7 @@ class Client {
   fetch(url, params = {}) {
     var _this35 = this;
 
-    return (0,D_Dev_Projects_NodeJS_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
+    return (0,D_Dev_jdufosse_github_io_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)(function* () {
       const res = yield _this35.fetchFn(url, {
         signal: params.signal
       });
