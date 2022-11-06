@@ -13,5 +13,11 @@
 .main-skills {
   padding: 1rem;
   display: grid;
-  grid-row-gap: 1.5rem;
+  gap: 1.5rem;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+  .main-skill:nth-child(1){ 
+    grid-row: span 3;
+  }
 }
