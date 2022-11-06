@@ -11,12 +11,7 @@
 }
 
 .main-skills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.main-skill {
-  margin-left: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0.1rem;
+  padding: 1rem;
+  display: grid;
+  grid-row-gap: 1.5rem;
 }

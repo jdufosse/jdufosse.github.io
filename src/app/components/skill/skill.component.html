@@ -1,10 +1,7 @@
-<div *ngIf="model" [ngClass]="level ? 'skill' : 'skill card'">
-  <div [ngClass]="level ? 'skill-title' : 'skill-title card-header'">
-    <h2 *ngIf="level == 0" class="card-header-title">{{ model.title }}</h2>
-    <h3 *ngIf="level == 1">{{ model.title }}</h3>
-    <h4 *ngIf="level == 2">{{ model.title }}</h4>
-    <h5 *ngIf="level == 3">{{ model.title }}</h5>
-    <h6 *ngIf="level >= 4">{{ model.title }}</h6>
+<div *ngIf="model" [ngClass]="'skill skill--' + level" >
+  <div class="skill__content">
+    <h3 *ngIf="!level" class="skill__content__title">{{ model.title }}</h3>
+    <span *ngIf="level" class="skill__content__title">{{ model.title }}</span>
     <div class="skill-score" *ngIf="model.score">
       <div *ngFor="let starNumber of [0.0, 1.0, 2.0, 3.0, 4.0]">
         <fa-icon
@@ -20,7 +17,7 @@
     </div>
   </div>
   <div
-    [ngClass]="level ? 'sub-skill' : 'sub-skill card-header'"
+    class="skill__sub-skills"
     *ngIf="model.skills"
   >
     <app-skill

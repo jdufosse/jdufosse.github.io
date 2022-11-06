@@ -1,16 +1,40 @@
-.skill-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.skill-score {
-  display: flex;
-  flex-direction: row;
-  margin-left: 1rem;
-  margin-right: 0.5rem;
-}
-.sub-skill {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0.5rem;
+.skill {
+  .skill__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &.skill--0 > .skill__content > .skill__content__title {
+    border-bottom: 1px solid;
+    border-bottom-color: var(--effect-color);
+    padding-bottom: 0.5rem;
+  }
+
+  &.skill--1 > .skill__content {
+    font-weight: bold;
+  }
+
+  .skill-score {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .skill__sub-skills {
+    padding-left: 0.5rem;
+  }
+
+  &.skill--0 > .skill__sub-skills {
+    display: grid;
+    grid-row-gap: 0.3rem;
+  }
+
+  &.skill--1 > .skill__sub-skills {
+    border-left: 1px solid;
+    border-left-color: var(--effect-color);
+    margin-right: 0;
+    padding-left: 0.5rem;
+  }
 }
