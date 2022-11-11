@@ -18,9 +18,11 @@ export class PrismicHelper {
       (thematicData: any) => {
         const title = PrismicHelper.getText(thematicData.primary.title);
         const anchor = thematicData.primary.anchor;
+        const icon = thematicData.primary.icon;
         const thematic: model.Thematic = {
           title,
           anchor,
+          icon,
           formations: [],
           experiences: [],
           skills: [],

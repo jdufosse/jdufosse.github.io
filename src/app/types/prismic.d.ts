@@ -11,6 +11,7 @@ declare type Thematic =
   | {
       title: string;
       anchor: string;
+      icon: string;
       formations: Formation[];
       experiences: Experience[];
       skills: Skill[];

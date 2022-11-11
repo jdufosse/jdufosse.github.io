@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Curriculum-vitae"
+  "defaultProject": "Curriculum-vitae",
+  "cli": {
+    "analytics": false
+  }
 }

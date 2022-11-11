@@ -1,26 +1,31 @@
-import { Component, OnInit, Input } from '@angular/core';
-import {
-  faCoffee,
-  faStar,
-  faStarHalfAlt,
-} from '@fortawesome/free-solid-svg-icons';
-import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
+import { Component, Input } from '@angular/core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 import * as model from '../../types/prismic';
+import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-thematic',
   templateUrl: './thematic.component.html',
   styleUrls: ['./thematic.component.scss'],
 })
-export class ThematicComponent implements OnInit {
-  public faCoffee = faCoffee;
-  public faStar = faStar;
-  public faStarHalfAlt = faStarHalfAlt;
-  public farStar = farStar;
+export class ThematicComponent {
+  public iconName: IconName = 'coffee';
 
-  constructor() {}
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(fas);
+  }
 
-  ngOnInit(): void {}
+  async UpdateIcon(): Promise<void> {
+    if (this._model?.icon) {
+      const iconName: IconName | undefined = this._model?.icon as IconName;
+
+      if (iconName) {
+        console.log('UpdateIcon', { iconName });
+        this.iconName = iconName;
+      }
+    }
+  }
 
   @Input()
   get model(): model.Thematic {
@@ -28,6 +33,7 @@ export class ThematicComponent implements OnInit {
   }
   set model(model: model.Thematic) {
     this._model = model;
+    this.UpdateIcon();
   }
   private _model: model.Thematic = undefined;
 }

@@ -1,6 +1,6 @@
 <div *ngIf="model" class="panel is-success mb-3">
   <h2 class="panel-heading">
-    <fa-icon class="panel-heading__icon" [icon]="faCoffee"></fa-icon>
+    <fa-icon class="panel-heading__icon" [icon]="['fas', this.iconName ]"></fa-icon>
     <span class="panel-heading__title">{{ model.title }}</span>
   </h2>
   <div
