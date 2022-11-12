@@ -1,28 +1,22 @@
 <app-layout>
   <div class="main container">
-    <div class="columns">
-      <section class="column is-one-quarter menu">
-        <article class="panel menu__sticky">
-          <div *ngFor="let thematic of data">
-            <a
-              *ngIf="thematic"
-              [routerLink]="'.'"
-              [fragment]="thematic.anchor"
-              class="panel-block is-active"
-            >
-              <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-              </span>
-              {{ thematic.title }}
-            </a>
-          </div>
-        </article>
-      </section>
-      <section class="column is-three-quarters">
-        <div *ngFor="let thematic of data" [attr.id]="thematic?.anchor">
-          <app-thematic [model]="thematic"></app-thematic>
+    <section class="menu">
+      <article class="panel menu__sticky">
+        <div *ngFor="let thematic of data; let index = index;">
+          <a
+            *ngIf="thematic"
+            [routerLink]="'.'"
+            [fragment]="thematic.anchor"
+            class="panel-block is-active"
+          >
+              <fa-icon class="menu__icon" [icon]="['fas', this.iconNames[index] ]"></fa-icon>
+              <span class="menu__title">{{ thematic.title }}</span>
+          </a>
         </div>
-      </section>
+      </article>
+    </section>
+    <div *ngFor="let thematic of data" [attr.id]="thematic?.anchor">
+      <app-thematic [model]="thematic"></app-thematic>
     </div>
   </div>
 </app-layout>

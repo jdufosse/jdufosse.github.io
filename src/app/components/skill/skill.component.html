@@ -2,7 +2,7 @@
   <div class="skill__content">
     <h3 *ngIf="!level" class="skill__content__title">{{ model.title }}</h3>
     <span *ngIf="level" class="skill__content__title">{{ model.title }}</span>
-    <div class="skill-score" *ngIf="model.score">
+    <div [ngClass]="'skill-score' + (level === 1 ? ' strong':'')" *ngIf="model.score">
       <div *ngFor="let starNumber of [0.0, 1.0, 2.0, 3.0, 4.0]">
         <fa-icon
           *ngIf="starNumber + 1 <= model.score"

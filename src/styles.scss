@@ -5,6 +5,7 @@
   --effect-color: hsl(0, 0%, 71%);
 
   --font-color: #363636;
+  --font-color--strong: #202020;
   --header-font-color: #ffffff;
 
   .dark-theme {
@@ -12,6 +13,7 @@
     --panel-background-color: #050505;
 
     --font-color: #d9d9d9;
+    --font-color--strong: #e0e0e0;
     --header-font-color: #000000;
   }
 }

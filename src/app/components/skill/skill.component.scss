@@ -21,6 +21,9 @@
     flex-direction: row;
     margin-left: 1rem;
     margin-right: 0.5rem;
+    &.strong {
+      color: var(--font-color--strong);
+    }
   }
 
   .skill__sub-skills {

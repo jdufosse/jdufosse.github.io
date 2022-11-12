@@ -19,15 +19,26 @@ legend {
 
 .menu {
   display: none;
+
+  .menu__sticky {
+    &:hover .menu__title {
+      display: inline;
+    }
+    .menu__title {
+      display: none;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .menu {
     display: block;
     .menu__sticky {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 120px;
+      position: fixed;
+      z-index: 200;
+      top: 50%;
+      left: 0%;
+      transform: translateY(-50%);
     }
   }
 }
