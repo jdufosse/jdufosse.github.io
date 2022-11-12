@@ -15,7 +15,7 @@
         </div>
       </article>
     </section>
-    <div *ngFor="let thematic of data" [attr.id]="thematic?.anchor">
+    <div *ngFor="let thematic of data" [attr.id]="thematic?.anchor" class="anchor">
       <app-thematic [model]="thematic"></app-thematic>
     </div>
   </div>
