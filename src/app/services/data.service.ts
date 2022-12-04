@@ -3,16 +3,16 @@ import { HttpClient } from '@angular/common/http';
 import * as prismic from '@prismicio/client';
 import * as model from '../types/prismic';
 import { PrismicHelper } from '../utils/prismic.helper';
-import { async } from '@angular/core/testing';
+import { Languages } from '../utils/languages';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
-  private _common: model.General = undefined;
-  private _thematics: model.Thematic[] = [];
-  private _commonCallbacks: ((data: model.General) => void)[] = [];
-  private _thematicsCallbacks: ((data: model.Thematic[]) => void)[] = [];
+  private _data: { [id: string]: model.PrismicData } = {};
+  private _dataCallbacks: ((data: {
+    [id: string]: model.PrismicData;
+  }) => void)[] = [];
 
   constructor(private httpClient: HttpClient) {
     console.log('DataService-ngOnInit');
@@ -25,62 +25,70 @@ export class DataService {
     this.init(client);
   }
 
-  public getGeneral(): model.General {
-    return this._common;
+  public getGeneral(language: Languages): model.General {
+    const general = this._data[language]?.general;
+    console.log('dataService - getGeneral', general);
+    return general;
   }
 
-  public getThematics(): model.Thematic[] {
-    return this._thematics;
+  public getThematics(language: Languages): model.Thematic[] {
+    return this._data[language]?.thematics;
   }
 
-  public subscribeGeneralChange(callback: (data: model.General) => void): void {
+  public subscribeDataLoaded(
+    callback: (data: { [id: string]: model.PrismicData }) => void
+  ): void {
     if (callback) {
-      this._commonCallbacks.push(callback);
+      this._dataCallbacks.push(callback);
     }
   }
 
-  public unsubscribeGeneralChange(
-    callback: (data: model.General) => void
+  public unsubscribeDataLoaded(
+    callback: (data: { [id: string]: model.PrismicData }) => void
   ): void {
     if (callback) {
-      this._commonCallbacks = this._commonCallbacks.filter(
-        (c) => c !== callback
-      );
-    }
-  }
-
-  public subscribeThematicsChange(
-    callback: (data: model.Thematic[]) => void
-  ): void {
-    if (callback) {
-      this._thematicsCallbacks.push(callback);
-    }
-  }
-
-  public unsubscribeThematicsChange(
-    callback: (data: model.Thematic[]) => void
-  ): void {
-    if (callback) {
-      this._thematicsCallbacks = this._thematicsCallbacks.filter(
-        (c) => c !== callback
-      );
+      this._dataCallbacks = this._dataCallbacks.filter((c) => c !== callback);
     }
   }
 
   private async init(client: prismic.Client): Promise<void> {
-    const common = await client.getByUID<any>('common', 'common');
+    const loadDataPromises: Promise<void>[] = Object.values(Languages).map(
+      async (value) => {
+        await this.LoadDataByLanguage(client, value);
+      }
+    );
+
+    await Promise.all(loadDataPromises);
+
+    console.log('init - Promise all finished');
+    this._dataCallbacks.forEach((callback) => {
+      if (callback) {
+        callback(this._data);
+      }
+    });
+  }
+
+  private async LoadDataByLanguage(
+    client: prismic.Client,
+    language: string
+  ): Promise<void> {
+    const common = await client.getByUID<any>('common', 'common', {
+      lang: language,
+    });
+    let commonModel: model.General = undefined;
     if (common) {
-      this._common = PrismicHelper.GetGeneral(common);
-      this._commonCallbacks.forEach((callback) => {
-        if (callback) {
-          callback(this._common);
-        }
-      });
+      commonModel = PrismicHelper.GetGeneral(common);
     }
 
-    const skills = await client.getAllByType<any>('skills');
-    const experiences = await client.getAllByType<any>('experience');
-    const missions = await client.getAllByType<any>('mission');
+    const skills = await client.getAllByType<any>('skills', {
+      lang: language,
+    });
+    const experiences = await client.getAllByType<any>('experience', {
+      lang: language,
+    });
+    const missions = await client.getAllByType<any>('mission', {
+      lang: language,
+    });
 
     const skillModels = PrismicHelper.GetSkills(skills);
     const missionModels = PrismicHelper.GetMissions(missions, skillModels);
@@ -93,19 +101,21 @@ export class DataService {
 
     const thematics = await client.getByUID<any>('thematics', 'thematics', {
       fetchLinks: `thematics.skills`,
+      lang: language,
     });
+    let thematicsModel: model.Thematic[] = [];
     if (thematics) {
-      this._thematics = PrismicHelper.GetThematics(thematics);
+      thematicsModel = PrismicHelper.GetThematics(thematics);
 
-      if (this._thematics) {
-        console.log('init', { thematics: this._thematics });
+      if (thematicsModel) {
+        console.log('init', { thematics: thematicsModel });
 
         await Promise.all(
-          this._thematics.map(async (thematic) => {
-            console.log('init-thematics', { thematic });
-            if (thematic) {
-              if (thematic.experiences) {
-                thematic.experiences = thematic.experiences.map(
+          thematicsModel.map(async (thematicModel) => {
+            console.log('init-thematics', { thematicModel });
+            if (thematicModel) {
+              if (thematicModel.experiences) {
+                thematicModel.experiences = thematicModel.experiences.map(
                   (experience: model.Experience) => {
                     return experienceModels.find(
                       (em) => em?.uid == experience?.uid
@@ -113,21 +123,24 @@ export class DataService {
                   }
                 );
               }
-              if (thematic.skills) {
-                thematic.skills = thematic.skills.map((skill: model.Skill) => {
-                  return skillModels.find((s) => s?.uid == skill?.uid);
-                });
+              if (thematicModel.skills) {
+                thematicModel.skills = thematicModel.skills.map(
+                  (skill: model.Skill) => {
+                    return skillModels.find((s) => s?.uid == skill?.uid);
+                  }
+                );
               }
             }
           })
         );
       }
+    }
 
-      this._thematicsCallbacks.forEach((callback) => {
-        if (callback) {
-          callback(this._thematics);
-        }
-      });
+    if (commonModel && thematicsModel) {
+      this._data[language] = {
+        general: commonModel,
+        thematics: thematicsModel,
+      };
     }
   }
 }

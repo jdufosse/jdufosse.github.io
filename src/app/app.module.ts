@@ -26,9 +26,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { DataService } from './services/data.service';
 
 const routes: Routes = [
+  { path: 'fr', component: MainComponent },
+  { path: 'en', component: MainComponent },
   { path: 'experience/:id', component: JobComponent },
-  { path: '', component: MainComponent },
   { path: 'not-found', component: FourOhFourComponent },
+  { path: '', redirectTo: '/fr', pathMatch: 'full'  },
   { path: '**', redirectTo: 'not-found' },
 ];
 

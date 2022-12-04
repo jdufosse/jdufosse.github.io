@@ -68,4 +68,9 @@ declare type Hobby =
     }
   | undefined;
 
-export { General, Thematic, Formation, Experience, Mission, Skill, Hobby };
+declare type PrismicData = {
+    general: General;
+    thematics: Thematic[] ;
+  };
+
+export { PrismicData, General, Thematic, Formation, Experience, Mission, Skill, Hobby };
