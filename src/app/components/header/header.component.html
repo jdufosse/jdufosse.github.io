@@ -3,7 +3,7 @@
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
-          <img src="{{ data.avatarUrl }}" alt="image" />
+          <img src="{{ data.avatar?.url }}" alt="{{ data.avatar?.alt ?? 'image' }}" />
         </figure>
       </div>
       <div class="media-content">
@@ -16,12 +16,9 @@
         </div>
       </div>
       <div class="media-right">
+        <img src="{{ data.avatar?.url }}" alt="{{ data.avatar?.alt ?? 'image' }}" class="media-right__icon media-right__language-icon">
         <fa-icon
-          class="media-right__language-icon"
-          [icon]="faBars"
-        ></fa-icon>
-        <fa-icon
-          class="media-right__menu-icon"
+          class="media-right__icon media-right__menu-icon"
           [icon]="faBars"
         ></fa-icon>
       </div>

@@ -1,9 +1,29 @@
+declare type PrismicItem = {
+  uid?: string;
+  isLoaded?: boolean;
+};
+
+declare type PrismicImage = {
+  url?: string;
+  alt?: string;
+};
+
+declare type AvailableLanguage = PrismicItem & {
+  name?: string;
+  code?: string;
+  icon?: PrismicImage;
+};
+
 declare type General =
   | {
       firstName: string;
       lastName: string;
       title?: string;
-      avatarUrl?: string;
+      avatar?: PrismicImage;
+      aboutMe?: string;
+      pageIcon?: PrismicImage;
+      pageTitle?: string;
+      languages?: AvailableLanguage[];
     }
   | undefined;
 
@@ -18,11 +38,6 @@ declare type Thematic =
       hobbies: Hobby[];
     }
   | undefined;
-
-declare type PrismicItem = {
-  uid?: string;
-  isLoaded?: boolean;
-};
 
 declare type Formation =
   | {
@@ -69,8 +84,19 @@ declare type Hobby =
   | undefined;
 
 declare type PrismicData = {
-    general: General;
-    thematics: Thematic[] ;
-  };
+  general: General;
+  thematics: Thematic[];
+};
 
-export { PrismicData, General, Thematic, Formation, Experience, Mission, Skill, Hobby };
+export {
+  PrismicData,
+  PrismicImage,
+  AvailableLanguage,
+  General,
+  Thematic,
+  Formation,
+  Experience,
+  Mission,
+  Skill,
+  Hobby,
+};

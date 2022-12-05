@@ -4,39 +4,47 @@ import * as prismic from '@prismicio/client';
 import * as model from '../types/prismic';
 import { PrismicHelper } from '../utils/prismic.helper';
 import { Languages } from '../utils/languages';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
   private _data: { [id: string]: model.PrismicData } = {};
-  private _dataCallbacks: ((data: {
-    [id: string]: model.PrismicData;
-  }) => void)[] = [];
+  private _dataCallbacks: ((data: model.PrismicData) => void)[] = [];
+  private _language: Languages = Languages.FRENCH;
 
   constructor(private httpClient: HttpClient) {
     console.log('DataService-ngOnInit');
-    const endpoint = prismic.getEndpoint('jdufosse');
+    const endpoint = prismic.getEndpoint(environment.prismic.endPoint);
     const client = prismic.createClient(endpoint, {
-      accessToken:
-        'MC5ZcC0takJFQUFDQUF5Y2lX.77-977-977-977-9bwDvv73vv73vv73vv73vv70CP--_ve-_ve-_vSwMA--_vSHvv73vv71a77-977-977-977-9Ru-_vWVy',
+      accessToken: environment.prismic.accesToken,
     });
 
     this.init(client);
   }
 
-  public getGeneral(language: Languages): model.General {
-    const general = this._data[language]?.general;
-    console.log('dataService - getGeneral', general);
-    return general;
+  public getLanguage(): Languages {
+    return this._language;
   }
 
-  public getThematics(language: Languages): model.Thematic[] {
-    return this._data[language]?.thematics;
+  public setLanguage(language: Languages): void {
+    if (this._language !== language) {
+      this._language = language;
+      this.raiseDataLoaded();
+    }
+  }
+
+  public getGeneral(): model.General {
+    return this._data[this._language]?.general;
+  }
+
+  public getThematics(): model.Thematic[] {
+    return this._data[this._language]?.thematics;
   }
 
   public subscribeDataLoaded(
-    callback: (data: { [id: string]: model.PrismicData }) => void
+    callback: (data: model.PrismicData) => void
   ): void {
     if (callback) {
       this._dataCallbacks.push(callback);
@@ -44,11 +52,19 @@ export class DataService {
   }
 
   public unsubscribeDataLoaded(
-    callback: (data: { [id: string]: model.PrismicData }) => void
+    callback: (data: model.PrismicData) => void
   ): void {
     if (callback) {
       this._dataCallbacks = this._dataCallbacks.filter((c) => c !== callback);
     }
+  }
+
+  private raiseDataLoaded(): void {
+    this._dataCallbacks.forEach((callback) => {
+      if (callback) {
+        callback(this._data[this._language]);
+      }
+    });
   }
 
   private async init(client: prismic.Client): Promise<void> {
@@ -61,25 +77,20 @@ export class DataService {
     await Promise.all(loadDataPromises);
 
     console.log('init - Promise all finished');
-    this._dataCallbacks.forEach((callback) => {
-      if (callback) {
-        callback(this._data);
-      }
-    });
+    this.raiseDataLoaded();
   }
 
   private async LoadDataByLanguage(
     client: prismic.Client,
     language: string
   ): Promise<void> {
+    // Do request to prismic
+    const languages = await client.getAllByType<any>('availablelanguage', {
+      lang: language,
+    });
     const common = await client.getByUID<any>('common', 'common', {
       lang: language,
     });
-    let commonModel: model.General = undefined;
-    if (common) {
-      commonModel = PrismicHelper.GetGeneral(common);
-    }
-
     const skills = await client.getAllByType<any>('skills', {
       lang: language,
     });
@@ -90,6 +101,8 @@ export class DataService {
       lang: language,
     });
 
+    const languageModels = PrismicHelper.GetLanguages(languages);
+    const commonModel = PrismicHelper.GetGeneral(common, languageModels);
     const skillModels = PrismicHelper.GetSkills(skills);
     const missionModels = PrismicHelper.GetMissions(missions, skillModels);
     const experienceModels = PrismicHelper.GetExperiences(

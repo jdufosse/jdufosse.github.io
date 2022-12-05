@@ -1,16 +1,52 @@
 import * as model from '../types/prismic';
 
 export class PrismicHelper {
-  static GetGeneral(prismicValue: any): model.General {
+  static GetGeneral(
+    prismicValue: any,
+    languages: model.AvailableLanguage[]
+  ): model.General {
+    if (!prismicValue.data) {
+      return undefined;
+    }
     const result: model.General = {
-      firstName: PrismicHelper.getText(prismicValue.data?.firstname),
-      lastName: PrismicHelper.getText(prismicValue.data?.lastname),
-      avatarUrl: PrismicHelper.getText(prismicValue.data?.avatar?.url),
-      title: PrismicHelper.getText(prismicValue.data?.title),
+      firstName: PrismicHelper.getText(prismicValue.data.firstname),
+      lastName: PrismicHelper.getText(prismicValue.data.lastname),
+      avatar: {
+        alt: PrismicHelper.getText(prismicValue.data.avatar?.alt),
+        url: PrismicHelper.getText(prismicValue.data.avatar?.url),
+      },
+      pageIcon: {
+        alt: PrismicHelper.getText(prismicValue.data.page_icon?.alt),
+        url: PrismicHelper.getText(prismicValue.data.page_icon?.url),
+      },
+      pageTitle: PrismicHelper.getText(prismicValue.data.page_title),
+      title: PrismicHelper.getText(prismicValue.data.title),
+      languages: [],
     };
+
+    if (prismicValue.data.languages) {
+      prismicValue.data.languages.forEach((language: any) => {
+        console.log('GetGeneral - languages', {language})
+        const languageModel = languages.find((l) => language.language.uid === l.uid);
+        if (languageModel) {
+          result.languages?.push(languageModel);
+        }
+      });
+    }
 
     console.log('GetGeneral', { prismicValue, result });
     return result;
+  }
+
+  static GetLanguages(prismicValues: any): model.AvailableLanguage[] {
+    const languages: model.AvailableLanguage[] = prismicValues.map(
+      (prismicValue: any) => {
+        return this.createLanguage(prismicValue) ?? undefined;
+      }
+    );
+
+    console.log('GetLanguages', { prismicValues, languages });
+    return languages;
   }
 
   static GetThematics(prismicValue: any): model.Thematic[] {
@@ -145,6 +181,23 @@ export class PrismicHelper {
 
     console.log('GetSkills', { prismicValues, skills });
     return skills;
+  }
+
+  private static createLanguage(languageData: any): model.AvailableLanguage {
+    const name = PrismicHelper.getText(languageData.data?.name);
+    const alt = PrismicHelper.getText(languageData.data?.icon?.alt);
+    const url = PrismicHelper.getText(languageData.data?.icon?.url);
+
+    return {
+      uid: languageData.uid,
+      icon: {
+        alt,
+        url,
+      },
+      code: languageData.lang,
+      name,
+      isLoaded: !!name,
+    };
   }
 
   private static createFormation(formationData: any): model.Formation {

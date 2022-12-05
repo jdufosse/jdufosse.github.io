@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fas, IconName } from '@fortawesome/free-solid-svg-icons';
 import { DataService } from 'src/app/services/data.service';
@@ -11,20 +12,26 @@ import * as model from '../../types/prismic';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit, OnDestroy {
-  private _handleDataLoadedCallback: (data: {
-    [id: string]: model.PrismicData;
-  }) => void;
+  private _handleDataLoadedCallback: (data: model.PrismicData) => void;
   public data: model.Thematic[] = [];
   public iconNames: IconName[] = [];
+  public language: Languages = Languages.FRENCH;
 
-  constructor(private dataService: DataService, library: FaIconLibrary) {
+  constructor(
+    private router: Router,
+    private dataService: DataService,
+    library: FaIconLibrary
+  ) {
+    this.dataService.setLanguage(
+      router.url.includes('en') ? Languages.ENGLISH : Languages.FRENCH
+    );
     library.addIconPacks(fas);
     this._handleDataLoadedCallback = this.handleDataLoadedCallback.bind(this);
   }
 
   ngOnInit(): void {
     this.dataService.subscribeDataLoaded(this._handleDataLoadedCallback);
-    this.data = this.dataService.getThematics(Languages.FRENCH);
+    this.data = this.dataService.getThematics();
 
     console.log('MainComponent-ngOnInit', { data: this.data });
   }
@@ -33,11 +40,9 @@ export class MainComponent implements OnInit, OnDestroy {
     this.dataService.unsubscribeDataLoaded(this._handleDataLoadedCallback);
   }
 
-  private handleDataLoadedCallback(data: {
-    [id: string]: model.PrismicData;
-  }): void {
+  private handleDataLoadedCallback(data: model.PrismicData): void {
     if (data) {
-      this.data = data[Languages.FRENCH].thematics;
+      this.data = data.thematics;
       console.log('MainComponent-handleThematicsChangeCallback', {
         data: this.data,
       });
