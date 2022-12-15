@@ -1,5 +1,5 @@
 on:
-  push:
+  pull_request:
     branches:
     - main
 
@@ -28,3 +28,17 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: dist/angular-github-actions
         enable_jekyll: true
+
+    - name: Replace secrets in config
+      uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: '#PRISMIC_ENDPOINT#'
+          replace: ${{PRISMIC_ACCESS_TOKEN}}
+          regex: false
+
+    - name: Replace secrets in config
+      uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: '#PRISMIC_ENDPOINT#'
+          replace: ${{PRISMIC_ENDPOINT}}
+          regex: false
