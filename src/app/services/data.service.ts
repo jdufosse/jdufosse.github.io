@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import * as model from '../types/data';
 import { Languages, loadDataRecursively } from '../utils/languages';
 
@@ -19,7 +18,7 @@ export class DataService {
   private _dataCallbacks: ((data: model.Data) => void)[] = [];
   private _language: Languages = Languages.FRENCH;
 
-  constructor(private httpClient: HttpClient) {
+  constructor() {
     console.log('DataService-ngOnInit');
     this.init();
   }
@@ -33,6 +32,10 @@ export class DataService {
       this._language = language;
       this.raiseDataLoaded();
     }
+  }
+
+  public getData(): model.Data {
+    return this._data[this._language];
   }
 
   public getGeneral(): model.General {
@@ -64,10 +67,13 @@ export class DataService {
   }
 
   private init(): void {
+    console.log('init', { data: this._data });
     Object.values(Languages).forEach((language) => {
       this.loadDataByLanguage(this._data[language], language);
     });
-    console.log('init - Promise all finished');
+
+    console.log('init done', { data: this._data });
+    this.raiseDataLoaded();
   }
 
   private loadDataByLanguage(data: model.Data, language: Languages): void {

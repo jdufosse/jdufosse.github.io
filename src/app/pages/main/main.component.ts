@@ -31,7 +31,7 @@ export class MainComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.dataService.subscribeDataLoaded(this._handleDataLoadedCallback);
-    this.data = this.dataService.getThematics();
+    this.handleDataLoadedCallback(this.dataService.getData());
 
     console.log('MainComponent-ngOnInit', { data: this.data });
   }

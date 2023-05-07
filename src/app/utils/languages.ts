@@ -2,8 +2,8 @@ const PREFIX_LANGUAGE_VALUE = 'text__';
 const PREFIX_IMAGE_VALUE = 'image__';
 
 export enum Languages {
-  'FRENCH' = 'fr-fr',
-  'ENGLISH' = 'en-gb',
+  'FRENCH' = 'french',
+  'ENGLISH' = 'english',
 }
 
 export function loadDataRecursively(
@@ -34,7 +34,7 @@ function loadStringData(
   if (data.startsWith(PREFIX_LANGUAGE_VALUE)) {
     return languageData[data.substring(PREFIX_LANGUAGE_VALUE.length)];
   } else if (data.startsWith(PREFIX_IMAGE_VALUE)) {
-    return imageData[data.substring(PREFIX_LANGUAGE_VALUE.length)];
+    return imageData[data.substring(PREFIX_IMAGE_VALUE.length)];
   } else {
     return data;
   }
