@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
-import * as model from '../../types/prismic';
+import * as model from '../../types/data';
 import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 

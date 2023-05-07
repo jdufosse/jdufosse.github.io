@@ -1,0 +1,318 @@
+[
+  {
+    "title": "Expériences professionnelles",
+    "anchor": "experiences",
+    "icon": "person-digging",
+    "formations": [],
+    "experiences": [
+      {
+        "uid": "publicis",
+        "title": "Publicis/Epsilon",
+        "description": "Développeur informatique",
+        "from": "2016-07-18",
+        "to": null,
+        "missions": [
+          {
+            "uid": "publicis-orange",
+            "title": "Orange",
+            "description": "Développeur au sein de l'équipe du site web la boutique d'Orange.",
+            "short-description": "",
+            "skills": [
+              {
+                "uid": "csharp",
+                "title": "C# .Net",
+                "score": 4.5,
+                "isLoaded": true,
+                "skills": [
+                  {
+                    "uid": "asp.net",
+                    "title": "ASP.Net",
+                    "score": 0,
+                    "isLoaded": true
+                  },
+                  {
+                    "uid": "wpf",
+                    "title": "WPF",
+                    "score": 3.5,
+                    "isLoaded": true
+                  },
+                  {
+                    "uid": "unity",
+                    "title": "Unity",
+                    "score": 2.5,
+                    "isLoaded": true
+                  }
+                ]
+              },
+              {
+                "uid": "asp.net",
+                "title": "ASP.Net",
+                "score": 0,
+                "isLoaded": true
+              },
+              {
+                "uid": "sql",
+                "title": "SQL",
+                "score": 3.5,
+                "isLoaded": true,
+                "skills": [null]
+              },
+              {
+                "uid": "angular",
+                "title": "Angular",
+                "score": 2.5,
+                "isLoaded": true,
+                "skills": [null]
+              }
+            ],
+            "isLoaded": true
+          },
+          {
+            "uid": "developpement-dun-outil-de-creation-de-diaporama-personnalisable.",
+            "title": "La Poste",
+            "description": "Développement d'un outil de création de diaporama personnalisable.",
+            "short-description": "",
+            "skills": [
+              {
+                "uid": "reactjs",
+                "title": "ReactJS",
+                "score": 4,
+                "isLoaded": true
+              },
+              {
+                "uid": "csharp",
+                "title": "C# .Net",
+                "score": 4.5,
+                "isLoaded": true,
+                "skills": [
+                  {
+                    "uid": "asp.net",
+                    "title": "ASP.Net",
+                    "score": 0,
+                    "isLoaded": true
+                  },
+                  {
+                    "uid": "wpf",
+                    "title": "WPF",
+                    "score": 3.5,
+                    "isLoaded": true
+                  },
+                  {
+                    "uid": "unity",
+                    "title": "Unity",
+                    "score": 2.5,
+                    "isLoaded": true
+                  }
+                ]
+              },
+              {
+                "uid": "asp.net",
+                "title": "ASP.Net",
+                "score": 0,
+                "isLoaded": true
+              },
+              {
+                "uid": "mysql",
+                "title": "mySQL",
+                "score": 4,
+                "isLoaded": true
+              }
+            ],
+            "isLoaded": true
+          },
+          {
+            "uid": "developpement-de-creation-de-presentation-video-personnalisable",
+            "title": "Digital Universities",
+            "description": "Développement de création de présentation vidéo personnalisable",
+            "short-description": "",
+            "skills": [
+              {
+                "uid": "reactjs",
+                "title": "ReactJS",
+                "score": 4,
+                "isLoaded": true
+              },
+              {
+                "uid": "csharp",
+                "title": "C# .Net",
+                "score": 4.5,
+                "isLoaded": true,
+                "skills": [
+                  {
+                    "uid": "asp.net",
+                    "title": "ASP.Net",
+                    "score": 0,
+                    "isLoaded": true
+                  },
+                  {
+                    "uid": "wpf",
+                    "title": "WPF",
+                    "score": 3.5,
+                    "isLoaded": true
+                  },
+                  {
+                    "uid": "unity",
+                    "title": "Unity",
+                    "score": 2.5,
+                    "isLoaded": true
+                  }
+                ]
+              },
+              {
+                "uid": "asp.net",
+                "title": "ASP.Net",
+                "score": 0,
+                "isLoaded": true
+              },
+              {
+                "uid": "mysql",
+                "title": "mySQL",
+                "score": 4,
+                "isLoaded": true
+              }
+            ],
+            "isLoaded": true
+          }
+        ],
+        "isLoaded": true
+      },
+      {
+        "uid": "scotler",
+        "title": "Scotler",
+        "description": "",
+        "from": "2013-07-22",
+        "to": "2016-07-14",
+        "missions": [
+          {
+            "uid": "maintenance-applicative-dune-interface-utilisateur",
+            "title": "Care-and-Comfort",
+            "description": "Maintenance applicative d'une interface utilisateur pour promouvoir les services en chambres des patients hospitalisés.\nL'application est déployé sur tablette équipé d'un bras articulé.",
+            "short-description": "",
+            "skills": [
+              {
+                "uid": "csharp",
+                "title": "C# .Net",
+                "score": 4.5,
+                "isLoaded": true,
+                "skills": [
+                  {
+                    "uid": "asp.net",
+                    "title": "ASP.Net",
+                    "score": 0,
+                    "isLoaded": true
+                  },
+                  {
+                    "uid": "wpf",
+                    "title": "WPF",
+                    "score": 3.5,
+                    "isLoaded": true
+                  },
+                  {
+                    "uid": "unity",
+                    "title": "Unity",
+                    "score": 2.5,
+                    "isLoaded": true
+                  }
+                ]
+              },
+              {
+                "uid": "wpf",
+                "title": "WPF",
+                "score": 3.5,
+                "isLoaded": true
+              },
+              {
+                "uid": "asp.net",
+                "title": "ASP.Net",
+                "score": 0,
+                "isLoaded": true
+              }
+            ],
+            "isLoaded": true
+          },
+          {
+            "uid": "mission-chez-micropross",
+            "title": "Mission chez MicroPross",
+            "description": "Maintenance applicative de leur produit en version tablette, notamment axé sur l'amélioration de la fluidité des déplacements sur des graphiques à large données.",
+            "short-description": "",
+            "skills": [
+              {
+                "uid": "csharp",
+                "title": "C# .Net",
+                "score": 4.5,
+                "isLoaded": true,
+                "skills": [
+                  {
+                    "uid": "asp.net",
+                    "title": "ASP.Net",
+                    "score": 0,
+                    "isLoaded": true
+                  },
+                  {
+                    "uid": "wpf",
+                    "title": "WPF",
+                    "score": 3.5,
+                    "isLoaded": true
+                  },
+                  {
+                    "uid": "unity",
+                    "title": "Unity",
+                    "score": 2.5,
+                    "isLoaded": true
+                  }
+                ]
+              },
+              {
+                "uid": "wpf",
+                "title": "WPF",
+                "score": 3.5,
+                "isLoaded": true
+              }
+            ],
+            "isLoaded": true
+          }
+        ],
+        "isLoaded": true
+      },
+      {
+        "uid": "entreprise-danalyse-scientifique-par-spectrometrie",
+        "title": "ImaBiotech",
+        "description": "Entreprise d'analyse scientifique par spectrométrie de masse.",
+        "from": "2012-12-03",
+        "to": "2013-06-28",
+        "missions": [],
+        "isLoaded": true
+      }
+    ],
+    "skills": [],
+    "hobbies": []
+  },
+  {
+    "title": "Cursus",
+    "anchor": "cursus",
+    "icon": "graduation-cap",
+    "formations": [
+      {
+        "title": "Polytech'Lille, école d'ingénieur",
+        "from": 2008,
+        "description": "Diplômé en tant qu'ingénieur \"Génie informatique et Statistique\"",
+        "to": 2013
+      },
+      {
+        "title": "Lycée Robespierre, prépa",
+        "from": 2006,
+        "description": "Maths sup / Maths spe",
+        "to": 2008
+      },
+      {
+        "title": "Baccalauréat",
+        "from": 2006,
+        "description": "",
+        "to": 2006
+      }
+    ],
+    "experiences": [],
+    "skills": [],
+    "hobbies": []
+  }
+]

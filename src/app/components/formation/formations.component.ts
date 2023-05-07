@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import * as prismicModel from '../../types/prismic';
+import * as prismicModel from '../../types/data';
 import * as frontModel from '../../types/front';
 
 @Component({

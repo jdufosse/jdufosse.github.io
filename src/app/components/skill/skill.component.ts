@@ -4,7 +4,7 @@ import {
   faStarHalfAlt as fasStarHalfAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
-import * as model from '../../types/prismic';
+import * as model from '../../types/data';
 
 @Component({
   selector: 'app-skill',

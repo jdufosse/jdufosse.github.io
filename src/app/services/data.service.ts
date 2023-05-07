@@ -1,27 +1,27 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import * as prismic from '@prismicio/client';
-import * as model from '../types/prismic';
-import { PrismicHelper } from '../utils/prismic.helper';
-import { Languages } from '../utils/languages';
-import { environment } from 'src/environments/environment';
+import * as model from '../types/data';
+import { Languages, loadDataRecursively } from '../utils/languages';
+
+import data from 'src/assets/data.json';
+import images from 'src/assets/data/image.json';
+import english from 'src/assets/data/culture.en-gb.json';
+import french from 'src/assets/data/culture.fr-fr.json';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
-  private _data: { [id: string]: model.PrismicData } = {};
-  private _dataCallbacks: ((data: model.PrismicData) => void)[] = [];
+  private _data: { [id: string]: model.Data } = {
+    french: { ...data },
+    english: { ...data },
+  };
+  private _dataCallbacks: ((data: model.Data) => void)[] = [];
   private _language: Languages = Languages.FRENCH;
 
   constructor(private httpClient: HttpClient) {
     console.log('DataService-ngOnInit');
-    const endpoint = prismic.getEndpoint(environment.prismic.endPoint);
-    const client = prismic.createClient(endpoint, {
-      accessToken: environment.prismic.accesToken,
-    });
-
-    this.init(client);
+    this.init();
   }
 
   public getLanguage(): Languages {
@@ -43,17 +43,13 @@ export class DataService {
     return this._data[this._language]?.thematics;
   }
 
-  public subscribeDataLoaded(
-    callback: (data: model.PrismicData) => void
-  ): void {
+  public subscribeDataLoaded(callback: (data: model.Data) => void): void {
     if (callback) {
       this._dataCallbacks.push(callback);
     }
   }
 
-  public unsubscribeDataLoaded(
-    callback: (data: model.PrismicData) => void
-  ): void {
+  public unsubscribeDataLoaded(callback: (data: model.Data) => void): void {
     if (callback) {
       this._dataCallbacks = this._dataCallbacks.filter((c) => c !== callback);
     }
@@ -67,93 +63,30 @@ export class DataService {
     });
   }
 
-  private async init(client: prismic.Client): Promise<void> {
-    const loadDataPromises: Promise<void>[] = Object.values(Languages).map(
-      async (value) => {
-        await this.LoadDataByLanguage(client, value);
-      }
-    );
-
-    await Promise.all(loadDataPromises);
-
+  private init(): void {
+    Object.values(Languages).forEach((language) => {
+      this.loadDataByLanguage(this._data[language], language);
+    });
     console.log('init - Promise all finished');
-    this.raiseDataLoaded();
   }
 
-  private async LoadDataByLanguage(
-    client: prismic.Client,
-    language: string
-  ): Promise<void> {
-    // Do request to prismic
-    const languages = await client.getAllByType<any>('availablelanguage', {
-      lang: language,
-    });
-    const common = await client.getByUID<any>('common', 'common', {
-      lang: language,
-    });
-    const skills = await client.getAllByType<any>('skills', {
-      lang: language,
-    });
-    const experiences = await client.getAllByType<any>('experience', {
-      lang: language,
-    });
-    const missions = await client.getAllByType<any>('mission', {
-      lang: language,
-    });
-
-    const languageModels = PrismicHelper.GetLanguages(languages);
-    const commonModel = PrismicHelper.GetGeneral(common, languageModels);
-    const skillModels = PrismicHelper.GetSkills(skills);
-    const missionModels = PrismicHelper.GetMissions(missions, skillModels);
-    const experienceModels = PrismicHelper.GetExperiences(
-      experiences,
-      missionModels
-    );
-
-    console.log('init', { skills, experiences, missions });
-
-    const thematics = await client.getByUID<any>('thematics', 'thematics', {
-      fetchLinks: `thematics.skills`,
-      lang: language,
-    });
-    let thematicsModel: model.Thematic[] = [];
-    if (thematics) {
-      thematicsModel = PrismicHelper.GetThematics(thematics);
-
-      if (thematicsModel) {
-        console.log('init', { thematics: thematicsModel });
-
-        await Promise.all(
-          thematicsModel.map(async (thematicModel) => {
-            console.log('init-thematics', { thematicModel });
-            if (thematicModel) {
-              if (thematicModel.experiences) {
-                thematicModel.experiences = thematicModel.experiences.map(
-                  (experience: model.Experience) => {
-                    return experienceModels.find(
-                      (em) => em?.uid == experience?.uid
-                    );
-                  }
-                );
-              }
-              if (thematicModel.skills) {
-                thematicModel.skills = thematicModel.skills.map(
-                  (skill: model.Skill) => {
-                    return skillModels.find((s) => s?.uid == skill?.uid);
-                  }
-                );
-              }
-            }
-          })
-        );
-      }
+  private loadDataByLanguage(data: model.Data, language: Languages): void {
+    const languageData = this.getLanguageData(language);
+    if (!languageData) {
+      console.error('loadDataByLanguage - No language data');
+      return;
     }
 
-    if (commonModel && thematicsModel) {
-      this._data[language] = {
-        general: commonModel,
-        thematics: thematicsModel,
-      };
+    loadDataRecursively(data, languageData, images);
+  }
+
+  private getLanguageData(language: Languages): any {
+    switch (language) {
+      case Languages.ENGLISH:
+        return english;
+      case Languages.FRENCH:
+      default:
+        return french;
     }
   }
 }

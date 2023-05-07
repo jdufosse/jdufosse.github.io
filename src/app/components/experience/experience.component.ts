@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as faIcons from '@fortawesome/free-solid-svg-icons';
-import * as model from '../../types/prismic';
+import * as model from '../../types/data';
 
 @Component({
   selector: 'app-experience',

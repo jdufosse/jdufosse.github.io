@@ -1,142 +1,82 @@
 {
   "general": {
-    "title": "Developper FullStack",
-    "lastName": "Test",
-    "firstName": "Nono",
-    "picture": "angular-logo.png"
+    "firstName": "Jérémy",
+    "lastName": "Dufossé",
+    "avatar": {
+      "alt": "text__avatar",
+      "url": "image__avatar"
+    },
+    "pageIcon": {
+      "alt": "text__page-icon",
+      "url": "image__page-icon"
+    },
+    "pageTitle": "text__page-title",
+    "title": "text__title",
+    "about": "text__about-me",
+    "languages": [
+      {
+        "uid": "french",
+        "icon": {
+          "alt": "fr",
+          "url": "image__french-flag"
+        },
+        "code": "fr-fr",
+        "name": "text__language-french"
+      },
+      {
+        "uid": "english",
+        "icon": {
+          "alt": "en",
+          "url": "image__british-flag"
+        },
+        "code": "en-gb",
+        "name": "text__language-english"
+      }
+    ]
   },
   "thematics": [
     {
-      "title": "Cursus",
-      "anchor": "cursus",
-      "formations": [
-        {
-          "title": "Ecole d'ingénieur Polytech'Lille",
-          "from": "2008",
-          "to": "2013",
-          "description": "Génie Informatique et Statistique"
-        },
-        {
-          "title": "Classe préparatoire, Lycée Robespierre",
-          "from": "2006",
-          "to": "2008",
-          "description": "Maths sup / Maths spé"
-        },
-        {
-          "title": "Baccalauréat scientifique",
-          "from": "2006",
-          "to": "2006",
-          "description": "Option sciences de l'ingénieur - Mention Bien"
-        }
-      ]
+      "uid": "experiences",
+      "title": "text__experiences--title",
+      "icon": "person-digging",
+      "experiences": []
     },
     {
-      "title": "Expérience Professionnelle",
-      "anchor": "experiences",
-      "experiences": [
-        {
-          "title": "Expérience Professionnelle 1",
-          "from": "2016-07",
-          "description": "Description 1",
-          "image": "",
-          "missions": [
-            {
-              "title": "Orange",
-              "short-description": "Développeur au sein de l'équipe du site web la boutique d'Orange.",
-              "skills": []
-            }
-          ]
-        },
-        {
-          "title": "Expérience Professionnelle 2",
-          "to": "2016-07",
-          "from": "2013-07",
-          "description": "Description 2",
-          "image": ""
-        }
-      ]
+      "uid": "cursus",
+      "title": "text__cursus--title",
+      "icon": "graduation-cap",
+      "formations": []
     },
     {
-      "title": "Compétences",
-      "anchor": "skills",
-      "skills": [
-        {
-          "title": "Système d'exploitation",
-          "skills": [
-            {
-              "id": 1,
-              "title": "Windows",
-              "score": "4"
-            },
-            {
-              "id": 2,
-              "title": "Linux",
-              "score": "2.5"
-            }
-          ]
-        },
-        {
-          "title": "Langages",
-          "skills": [
-            {
-              "id": 3,
-              "title": "C# .Net",
-              "score": "4.5"
-            },
-            {
-              "id": 4,
-              "title": "Javascript",
-              "score": "4",
-              "skills": [
-                {
-                  "id": 5,
-                  "title": "React",
-                  "score": "3.5"
-                },
-                {
-                  "id": 6,
-                  "title": "Angular",
-                  "score": "3"
-                }
-              ]
-            },
-            {
-              "id": 7,
-              "title": "HTML",
-              "score": "4"
-            },
-            {
-              "id": 8,
-              "title": "SQL",
-              "score": "3.5"
-            }
-          ]
-        }
-      ]
+      "uid": "skills",
+      "title": "skills-title",
+      "icon": "list-check",
+      "skills": []
     },
     {
-      "title": "Centre d'intérêts",
-      "anchor": "hobbies",
+      "uid": "hobbies",
+      "title": "text__hobbies-title",
+      "icon": "gamepad",
       "hobbies": [
         {
-          "title": "Sport",
-          "imageUrl": "hobby-sport.jpg"
+          "title": "text__hobbies--sport",
+          "image": "image__hobbies--sport"
         },
         {
-          "title": "Jeux vidéos",
-          "imageUrl": "hobby-videogames.jpg"
+          "title": "text__hobbies--videogames",
+          "image": "image__hobbies--videogames"
         },
         {
-          "title": "Musique",
-          "imageUrl": "hobby-music.jpg"
+          "title": "text__hobbies--music",
+          "image": "image__hobbies--music"
         },
         {
-          "title": "Films",
-          "imageUrl": "hobby-movies.jpg"
+          "title": "text__hobbies--movies",
+          "image": "image__hobbies--movies"
         },
         {
-          "title": "Dévelopement",
-          "imageUrl": "hobby-development.jpg"
+          "title": "text__hobbies--development",
+          "image": "image__hobbies--development"
         }
       ]
     }

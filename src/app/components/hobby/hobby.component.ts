@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import * as model from '../../types/prismic';
+import * as model from '../../types/data';
 
 @Component({
   selector: 'app-hobby',

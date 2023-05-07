@@ -2,20 +2,23 @@
   <div class="main container">
     <section class="menu">
       <article class="panel menu__sticky">
-        <div *ngFor="let thematic of data; let index = index;">
+        <div *ngFor="let thematic of data; let index = index">
           <a
             *ngIf="thematic"
             [routerLink]="'.'"
-            [fragment]="thematic.anchor"
+            [fragment]="thematic.uid"
             class="panel-block is-active"
           >
-              <fa-icon class="menu__icon" [icon]="['fas', this.iconNames[index] ]"></fa-icon>
-              <span class="menu__title">{{ thematic.title }}</span>
+            <fa-icon
+              class="menu__icon"
+              [icon]="['fas', this.iconNames[index]]"
+            ></fa-icon>
+            <span class="menu__title">{{ thematic.title }}</span>
           </a>
         </div>
       </article>
     </section>
-    <div *ngFor="let thematic of data" [attr.id]="thematic?.anchor" class="anchor">
+    <div *ngFor="let thematic of data" [attr.id]="thematic?.uid" class="anchor">
       <app-thematic [model]="thematic"></app-thematic>
     </div>
   </div>

@@ -1,0 +1,351 @@
+{
+  "general": {
+    "firstName": "Jérémy",
+    "lastName": "Dufossé",
+    "avatar": {
+      "alt": "text__avatar",
+      "url": "image__avatar"
+    },
+    "pageIcon": {
+      "alt": "text__page-icon",
+      "url": "image__page-icon"
+    },
+    "pageTitle": "text__page-title",
+    "title": "text__title",
+    "about": "text__about-me",
+    "languages": [
+      {
+        "uid": "french",
+        "icon": {
+          "alt": "fr",
+          "url": "image__french-flag"
+        },
+        "code": "fr-fr",
+        "name": "text__language-french"
+      },
+      {
+        "uid": "english",
+        "icon": {
+          "alt": "en",
+          "url": "image__british-flag"
+        },
+        "code": "en-gb",
+        "name": "text__language-english"
+      }
+    ]
+  },
+  "thematics": [
+    {
+      "uid": "experiences",
+      "title": "text__experiences--title",
+      "icon": "person-digging",
+      "experiences": [
+        {
+          "uid": "publicis",
+          "title": "text__experiences--publicis-title",
+          "description": "text__experiences--publicis-description",
+          "from": "2016-07-18",
+          "missions": [
+            {
+              "uid": "publicis--digital-universities",
+              "title": "text__experiences--publicis--digital-universities-title",
+              "description": "text__experiences--publicis--digital-universities-description",
+              "skills": []
+            },
+            {
+              "uid": "publicis--axa",
+              "title": "text__experiences--publicis--axa-title",
+              "description": "text__experiences--publicis--axa-description"
+            },
+            {
+              "uid": "publicis--la-poste",
+              "title": "text__experiences--publicis--la-poste-title",
+              "description": "text__experiences--publicis--la-poste-description"
+            },
+            {
+              "uid": "publicis--orange",
+              "title": "text__experiences--publicis--orange-title",
+              "description": "text__experiences--publicis--orange-description",
+              "skills": []
+            }
+          ]
+        },
+        {
+          "uid": "scotler",
+          "title": "text__experiences--scotler-title",
+          "description": "text__experiences--description",
+          "from": "2013-07-22",
+          "to": "2016-07-14",
+          "missions": [
+            {
+              "uid": "scotler--micropross",
+              "title": "text__experiences--scotler--micropross-title",
+              "description": "text__experiences--scotler--micropross-description",
+              "skills": []
+            },
+            {
+              "uid": "scotler--care-and-comfort",
+              "title": "text__experiences--scotler--care-and-comfort-title",
+              "description": "text__experiences--scotler--care-and-comfort-description",
+              "skills": []
+            }
+          ]
+        },
+        {
+          "uid": "imabiotech",
+          "title": "text__experiences--imabiotech-title",
+          "description": "text__experiences--imabiotech-description",
+          "from": "2012-12-03",
+          "to": "2013-06-28"
+        }
+      ]
+    },
+    {
+      "uid": "cursus",
+      "title": "text__cursus--title",
+      "icon": "graduation-cap",
+      "formations": [
+        {
+          "title": "text__cursus--title",
+          "description": "text__cursus--description",
+          "from": 2008,
+          "to": 2013
+        },
+        {
+          "title": "text__cursus--title",
+          "description": "text__cursus--prepa-description",
+          "from": 2006,
+          "to": 2008
+        },
+        {
+          "title": "text__cursus--bac-title",
+          "from": 2006,
+          "to": 2006
+        }
+      ]
+    },
+    {
+      "uid": "skills",
+      "title": "skills-title",
+      "icon": "list-check",
+      "skills": [
+        {
+          "uid": "languages",
+          "title": "text__skills--languages-title",
+          "skills": [
+            {
+              "uid": "csharp",
+              "title": "text__skills--csharp-title",
+              "score": 4.5,
+              "skills": [
+                {
+                  "uid": "asp.net",
+                  "title": "text__skills--asp-title",
+                  "score": 0
+                },
+                {
+                  "uid": "wpf",
+                  "title": "text__skills--wpf-title",
+                  "score": 3.5
+                },
+                {
+                  "uid": "unity",
+                  "title": "text__skills--unity-title",
+                  "score": 2.5
+                }
+              ]
+            },
+            {
+              "uid": "javascript",
+              "title": "text__skills--javascript-title",
+              "score": 4,
+              "skills": [
+                {
+                  "uid": "reactjs",
+                  "title": "text__skills--reactjs-title",
+                  "score": 4
+                },
+                {
+                  "uid": "angular",
+                  "title": "text__skills--angular-title",
+                  "score": 2.5
+                },
+                {
+                  "uid": "jquery",
+                  "title": "text__skills--jquery-title",
+                  "score": 2.5
+                }
+              ]
+            },
+            {
+              "uid": "web",
+              "title": "text__skills--web-title",
+              "skills": [
+                {
+                  "uid": "html",
+                  "title": "text__skills--html-title",
+                  "score": 4
+                },
+                {
+                  "uid": "css",
+                  "title": "text__skills--css-title",
+                  "score": 2.5
+                }
+              ]
+            },
+            {
+              "uid": "sql",
+              "title": "text__skills--sql-title",
+              "score": 3.5
+            }
+          ]
+        },
+        {
+          "uid": "os",
+          "title": "text__skills--os-title",
+          "score": 0,
+          "skills": [
+            {
+              "uid": "windows",
+              "title": "text__skills--windows-title",
+              "score": 3.5
+            },
+            {
+              "uid": "unix",
+              "title": "text__skills--unix-title",
+              "score": 1.5
+            }
+          ]
+        },
+        {
+          "uid": "methodology",
+          "title": "text__skills--methodology-title",
+          "score": 0,
+          "skills": [
+            {
+              "uid": "agile",
+              "title": "text__skills--agile-title",
+              "score": 0
+            },
+            {
+              "uid": "kanban",
+              "title": "text__skills--kanban-title",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "uid": "patterns",
+          "title": "text__skills--patterns-title",
+          "score": 0,
+          "skills": [
+            {
+              "uid": "mvc",
+              "title": "text__skills--mvc-title",
+              "score": 0
+            },
+            {
+              "uid": "mvp",
+              "title": "text__skills--mvp-title",
+              "score": 0
+            },
+            {
+              "uid": "mvvm",
+              "title": "text__skills--mvvm-title",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "uid": "linguistic",
+          "title": "text__skills--linguistic-title",
+          "score": 0,
+          "skills": [
+            {
+              "uid": "french",
+              "title": "text__skills--french-title",
+              "score": 4.5
+            },
+            {
+              "uid": "english",
+              "title": "text__skills--english-title",
+              "score": 3.5
+            },
+            {
+              "uid": "spanish",
+              "title": "text__skills--spanish-title",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "uid": "source-code",
+          "title": "text__skills--source-code-title",
+          "skills": [
+            {
+              "uid": "tfs",
+              "title": "text__skills--tfs-title"
+            },
+            {
+              "uid": "git",
+              "title": "text__skills--git-title"
+            }
+          ]
+        },
+        {
+          "uid": "software",
+          "title": "text__skills--software-title",
+          "skills": [
+            {
+              "uid": "vs",
+              "title": "text__skills--vs-title"
+            },
+            {
+              "uid": "vsc",
+              "title": "text__skills--vsc-title"
+            },
+            {
+              "uid": "ssms",
+              "title": "text__skills--ssms-title"
+            },
+            {
+              "uid": "iis",
+              "title": "text__skills--iis-title"
+            },
+            {
+              "uid": "postman",
+              "title": "text__skills--postman-title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uid": "hobbies",
+      "title": "text__hobbies-title",
+      "icon": "gamepad",
+      "hobbies": [
+        {
+          "title": "text__hobbies--sport",
+          "image": "image__hobbies--sport"
+        },
+        {
+          "title": "text__hobbies--videogames",
+          "image": "image__hobbies--videogames"
+        },
+        {
+          "title": "text__hobbies--music",
+          "image": "image__hobbies--music"
+        },
+        {
+          "title": "text__hobbies--movies",
+          "image": "image__hobbies--movies"
+        },
+        {
+          "title": "text__hobbies--development",
+          "image": "image__hobbies--development"
+        }
+      ]
+    }
+  ]
+}

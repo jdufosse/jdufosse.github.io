@@ -4,7 +4,7 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fas, IconName } from '@fortawesome/free-solid-svg-icons';
 import { DataService } from 'src/app/services/data.service';
 import { Languages } from 'src/app/utils/languages';
-import * as model from '../../types/prismic';
+import * as model from '../../types/data';
 
 @Component({
   selector: 'app-main',
@@ -12,7 +12,7 @@ import * as model from '../../types/prismic';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit, OnDestroy {
-  private _handleDataLoadedCallback: (data: model.PrismicData) => void;
+  private _handleDataLoadedCallback: (data: model.Data) => void;
   public data: model.Thematic[] = [];
   public iconNames: IconName[] = [];
   public language: Languages = Languages.FRENCH;
@@ -40,7 +40,7 @@ export class MainComponent implements OnInit, OnDestroy {
     this.dataService.unsubscribeDataLoaded(this._handleDataLoadedCallback);
   }
 
-  private handleDataLoadedCallback(data: model.PrismicData): void {
+  private handleDataLoadedCallback(data: model.Data): void {
     if (data) {
       this.data = data.thematics;
       console.log('MainComponent-handleThematicsChangeCallback', {
