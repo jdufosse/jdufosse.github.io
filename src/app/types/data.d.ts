@@ -51,7 +51,7 @@ declare type Mission =
   | (ItemBase & {
       'short-description'?: string;
       description?: string;
-      skills: Skill[];
+      skills?: Skill[];
     })
   | undefined;
 

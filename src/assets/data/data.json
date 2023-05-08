@@ -96,7 +96,8 @@
           "title": "text__experiences--imabiotech-title",
           "description": "text__experiences--imabiotech-description",
           "from": "2012-12-03",
-          "to": "2013-06-28"
+          "to": "2013-06-28",
+          "missions": []
         }
       ]
     },
@@ -108,25 +109,25 @@
         {
           "title": "text__cursus--title",
           "description": "text__cursus--description",
-          "from": 2008,
-          "to": 2013
+          "from": "2008",
+          "to": "2013"
         },
         {
           "title": "text__cursus--title",
           "description": "text__cursus--prepa-description",
-          "from": 2006,
-          "to": 2008
+          "from": "2006",
+          "to": "2008"
         },
         {
           "title": "text__cursus--bac-title",
-          "from": 2006,
-          "to": 2006
+          "from": "2006",
+          "to": "2006"
         }
       ]
     },
     {
       "uid": "skills",
-      "title": "skills-title",
+      "title": "text__skills--title",
       "icon": "list-check",
       "skills": [
         {
@@ -322,7 +323,7 @@
     },
     {
       "uid": "hobbies",
-      "title": "text__hobbies-title",
+      "title": "text__hobbies--title",
       "icon": "gamepad",
       "hobbies": [
         {

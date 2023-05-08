@@ -638,7 +638,7 @@ LayoutComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](4, "app-footer");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    } }, dependencies: [_footer_footer_component__WEBPACK_IMPORTED_MODULE_0__.FooterComponent, _header_header_component__WEBPACK_IMPORTED_MODULE_1__.HeaderComponent], styles: [".layout[_ngcontent-%COMP%] {\n  padding-top: 125px;\n}\n.layout[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%] {\n  position: fixed;\n  width: 100%;\n  z-index: 10;\n  top: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxheW91dC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFBO0FBQ0Y7QUFDRTtFQUNFLGVBQUE7RUFDQSxXQUFBO0VBQ0EsV0FBQTtFQUNBLE1BQUE7QUFDSiIsImZpbGUiOiJsYXlvdXQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubGF5b3V0IHtcbiAgcGFkZGluZy10b3A6IDEyNXB4O1xuXG4gIC5oZWFkZXIge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICB6LWluZGV4OiAxMDtcbiAgICB0b3A6IDA7XG4gIH1cbn1cbiJdfQ== */"] });
+    } }, dependencies: [_footer_footer_component__WEBPACK_IMPORTED_MODULE_0__.FooterComponent, _header_header_component__WEBPACK_IMPORTED_MODULE_1__.HeaderComponent], styles: [".layout[_ngcontent-%COMP%] {\n  padding-top: 125px;\n}\n.layout[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%] {\n  position: fixed;\n  width: 100%;\n  z-index: 10;\n  top: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxheW91dC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFBO0FBQ0Y7QUFDRTtFQUNFLGVBQUE7RUFDQSxXQUFBO0VBQ0EsV0FBQTtFQUNBLE1BQUE7QUFDSiIsImZpbGUiOiJsYXlvdXQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubGF5b3V0IHtcclxuICBwYWRkaW5nLXRvcDogMTI1cHg7XHJcblxyXG4gIC5oZWFkZXIge1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICB6LWluZGV4OiAxMDtcclxuICAgIHRvcDogMDtcclxuICB9XHJcbn1cclxuIl19 */"] });
 
 
 /***/ }),
@@ -854,17 +854,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ThematicComponent": () => (/* binding */ ThematicComponent)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! tslib */ 4929);
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ 9306);
-/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ 8722);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 3184);
-/* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ 9397);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ 6362);
-/* harmony import */ var _experience_experience_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../experience/experience.component */ 6228);
-/* harmony import */ var _hobby_hobby_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hobby/hobby.component */ 9570);
-/* harmony import */ var _skill_skill_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../skill/skill.component */ 1269);
-/* harmony import */ var _formation_formations_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../formation/formations.component */ 572);
-
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ 9306);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ 9397);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 6362);
+/* harmony import */ var _experience_experience_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../experience/experience.component */ 6228);
+/* harmony import */ var _hobby_hobby_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../hobby/hobby.component */ 9570);
+/* harmony import */ var _skill_skill_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../skill/skill.component */ 1269);
+/* harmony import */ var _formation_formations_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../formation/formations.component */ 572);
 
 
 
@@ -875,92 +873,92 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ThematicComponent_div_0_div_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](1, "app-formations", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "app-formations", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("model", ctx_r1.model.formations);
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("model", ctx_r1.model.formations);
 } }
 function ThematicComponent_div_0_div_6_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](1, "app-experience", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "app-experience", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const experience_r6 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("model", experience_r6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("model", experience_r6);
 } }
 function ThematicComponent_div_0_div_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](1, ThematicComponent_div_0_div_6_div_1_Template, 2, 1, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, ThematicComponent_div_0_div_6_div_1_Template, 2, 1, "div", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngForOf", ctx_r2.model.experiences);
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx_r2.model.experiences);
 } }
 function ThematicComponent_div_0_div_7_app_skill_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](0, "app-skill", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "app-skill", 15);
 } if (rf & 2) {
     const skill_r8 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("model", skill_r8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("model", skill_r8);
 } }
 function ThematicComponent_div_0_div_7_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](1, ThematicComponent_div_0_div_7_app_skill_1_Template, 1, 1, "app-skill", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, ThematicComponent_div_0_div_7_app_skill_1_Template, 1, 1, "app-skill", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngForOf", ctx_r3.model.skills);
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx_r3.model.skills);
 } }
 function ThematicComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](1, "app-hobby", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "app-hobby", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("model", ctx_r4.model.hobbies);
+    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("model", ctx_r4.model.hobbies);
 } }
 const _c0 = function (a1) { return ["fas", a1]; };
 function ThematicComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 1)(1, "h2", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](2, "fa-icon", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](3, "span", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](5, ThematicComponent_div_0_div_5_Template, 2, 1, "div", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](6, ThematicComponent_div_0_div_6_Template, 2, 1, "div", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](7, ThematicComponent_div_0_div_7_Template, 2, 1, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](8, ThematicComponent_div_0_div_8_Template, 2, 1, "div", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 1)(1, "h2", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](2, "fa-icon", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "span", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](5, ThematicComponent_div_0_div_5_Template, 2, 1, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, ThematicComponent_div_0_div_6_Template, 2, 1, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](7, ThematicComponent_div_0_div_7_Template, 2, 1, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](8, ThematicComponent_div_0_div_8_Template, 2, 1, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("icon", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction1"](6, _c0, ctx_r0.iconName));
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate"](ctx_r0.model.title);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx_r0.model.formations && ctx_r0.model.formations.length > 0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx_r0.model.experiences && ctx_r0.model.experiences.length > 0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx_r0.model.skills && ctx_r0.model.skills.length > 0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx_r0.model.hobbies && ctx_r0.model.hobbies.length > 0);
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("icon", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction1"](6, _c0, ctx_r0.iconName));
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](ctx_r0.model.title);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx_r0.model.formations && ctx_r0.model.formations.length > 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx_r0.model.experiences && ctx_r0.model.experiences.length > 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx_r0.model.skills && ctx_r0.model.skills.length > 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx_r0.model.hobbies && ctx_r0.model.hobbies.length > 0);
 } }
 class ThematicComponent {
     constructor(library) {
         this.iconName = 'coffee';
         this._model = undefined;
-        library.addIconPacks(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.fas);
+        library.addIconPacks(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__.fas);
     }
     UpdateIcon() {
         var _a, _b;
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_7__.__awaiter)(this, void 0, void 0, function* () {
+        return (0,tslib__WEBPACK_IMPORTED_MODULE_6__.__awaiter)(this, void 0, void 0, function* () {
             if ((_a = this._model) === null || _a === void 0 ? void 0 : _a.icon) {
                 const iconName = (_b = this._model) === null || _b === void 0 ? void 0 : _b.icon;
                 if (iconName) {
@@ -978,12 +976,12 @@ class ThematicComponent {
         this.UpdateIcon();
     }
 }
-ThematicComponent.ɵfac = function ThematicComponent_Factory(t) { return new (t || ThematicComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_8__.FaIconLibrary)); };
-ThematicComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: ThematicComponent, selectors: [["app-thematic"]], inputs: { model: "model" }, decls: 1, vars: 1, consts: [["class", "panel is-success mb-3", 4, "ngIf"], [1, "panel", "is-success", "mb-3"], [1, "panel-heading"], [1, "panel-heading__icon", 3, "icon"], [1, "panel-heading__title"], ["class", "panel-block", 4, "ngIf"], [4, "ngIf"], ["class", "main-skills", 4, "ngIf"], ["class", "is-full", 4, "ngIf"], [1, "panel-block"], [3, "model"], ["class", "panel-block", 4, "ngFor", "ngForOf"], [1, "column", "is-full", 3, "model"], [1, "main-skills"], ["class", "main-skill", 3, "model", 4, "ngFor", "ngForOf"], [1, "main-skill", 3, "model"], [1, "is-full"]], template: function ThematicComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](0, ThematicComponent_div_0_Template, 9, 8, "div", 0);
+ThematicComponent.ɵfac = function ThematicComponent_Factory(t) { return new (t || ThematicComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_7__.FaIconLibrary)); };
+ThematicComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: ThematicComponent, selectors: [["app-thematic"]], inputs: { model: "model" }, decls: 1, vars: 1, consts: [["class", "panel is-success mb-3", 4, "ngIf"], [1, "panel", "is-success", "mb-3"], [1, "panel-heading"], [1, "panel-heading__icon", 3, "icon"], [1, "panel-heading__title"], ["class", "panel-block", 4, "ngIf"], [4, "ngIf"], ["class", "main-skills", 4, "ngIf"], ["class", "is-full", 4, "ngIf"], [1, "panel-block"], [3, "model"], ["class", "panel-block", 4, "ngFor", "ngForOf"], [1, "column", "is-full", 3, "model"], [1, "main-skills"], ["class", "main-skill", 3, "model", 4, "ngFor", "ngForOf"], [1, "main-skill", 3, "model"], [1, "is-full"]], template: function ThematicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](0, ThematicComponent_div_0_Template, 9, 8, "div", 0);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.model);
-    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgIf, _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_8__.FaIconComponent, _experience_experience_component__WEBPACK_IMPORTED_MODULE_1__.ExperienceComponent, _hobby_hobby_component__WEBPACK_IMPORTED_MODULE_2__.HobbyComponent, _skill_skill_component__WEBPACK_IMPORTED_MODULE_3__.SkillComponent, _formation_formations_component__WEBPACK_IMPORTED_MODULE_4__.FormationsComponent], styles: [".panel[_ngcontent-%COMP%] {\n  background-color: var(--panel-background-color);\n}\n.panel[_ngcontent-%COMP%]   .panel-block[_ngcontent-%COMP%] {\n  color: var(--font-color);\n}\n.panel[_ngcontent-%COMP%]   .panel-heading__title[_ngcontent-%COMP%] {\n  padding-left: 1rem;\n}\n.main-skills[_ngcontent-%COMP%] {\n  padding: 1rem;\n  display: grid;\n  gap: 1.5rem;\n  grid-auto-flow: dense;\n  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));\n}\n.main-skills[_ngcontent-%COMP%]   .main-skill[_ngcontent-%COMP%]:nth-child(1) {\n  grid-row: span 3;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRoZW1hdGljLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsK0NBQUE7QUFDRjtBQUNFO0VBQ0Usd0JBQUE7QUFDSjtBQUVFO0VBQ0Usa0JBQUE7QUFBSjtBQUlBO0VBQ0UsYUFBQTtFQUNBLGFBQUE7RUFDQSxXQUFBO0VBQ0EscUJBQUE7RUFDQSw0REFBQTtBQURGO0FBR0U7RUFDRSxnQkFBQTtBQURKIiwiZmlsZSI6InRoZW1hdGljLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBhbmVsIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1wYW5lbC1iYWNrZ3JvdW5kLWNvbG9yKTtcclxuXHJcbiAgLnBhbmVsLWJsb2NrIHtcclxuICAgIGNvbG9yOiB2YXIoLS1mb250LWNvbG9yKTtcclxuICB9XHJcblxyXG4gIC5wYW5lbC1oZWFkaW5nX190aXRsZSB7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDFyZW07XHJcbiAgfVxyXG59XHJcblxyXG4ubWFpbi1za2lsbHMge1xyXG4gIHBhZGRpbmc6IDFyZW07XHJcbiAgZGlzcGxheTogZ3JpZDtcclxuICBnYXA6IDEuNXJlbTtcclxuICBncmlkLWF1dG8tZmxvdzogZGVuc2U7XHJcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoYXV0by1maWxsLCBtaW5tYXgoMzUwcHgsIDFmcikpO1xyXG5cclxuICAubWFpbi1za2lsbDpudGgtY2hpbGQoMSl7IFxyXG4gICAgZ3JpZC1yb3c6IHNwYW4gMztcclxuICB9XHJcbn0iXX0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.model);
+    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_8__.NgIf, _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_7__.FaIconComponent, _experience_experience_component__WEBPACK_IMPORTED_MODULE_0__.ExperienceComponent, _hobby_hobby_component__WEBPACK_IMPORTED_MODULE_1__.HobbyComponent, _skill_skill_component__WEBPACK_IMPORTED_MODULE_2__.SkillComponent, _formation_formations_component__WEBPACK_IMPORTED_MODULE_3__.FormationsComponent], styles: [".panel[_ngcontent-%COMP%] {\n  background-color: var(--panel-background-color);\n}\n.panel[_ngcontent-%COMP%]   .panel-block[_ngcontent-%COMP%] {\n  color: var(--font-color);\n}\n.panel[_ngcontent-%COMP%]   .panel-heading__title[_ngcontent-%COMP%] {\n  padding-left: 1rem;\n}\n.main-skills[_ngcontent-%COMP%] {\n  padding: 1rem;\n  display: grid;\n  gap: 1.5rem;\n  grid-auto-flow: dense;\n  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));\n}\n.main-skills[_ngcontent-%COMP%]   .main-skill[_ngcontent-%COMP%]:nth-child(1) {\n  grid-row: span 3;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRoZW1hdGljLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsK0NBQUE7QUFDRjtBQUNFO0VBQ0Usd0JBQUE7QUFDSjtBQUVFO0VBQ0Usa0JBQUE7QUFBSjtBQUlBO0VBQ0UsYUFBQTtFQUNBLGFBQUE7RUFDQSxXQUFBO0VBQ0EscUJBQUE7RUFDQSw0REFBQTtBQURGO0FBR0U7RUFDRSxnQkFBQTtBQURKIiwiZmlsZSI6InRoZW1hdGljLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBhbmVsIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1wYW5lbC1iYWNrZ3JvdW5kLWNvbG9yKTtcclxuXHJcbiAgLnBhbmVsLWJsb2NrIHtcclxuICAgIGNvbG9yOiB2YXIoLS1mb250LWNvbG9yKTtcclxuICB9XHJcblxyXG4gIC5wYW5lbC1oZWFkaW5nX190aXRsZSB7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDFyZW07XHJcbiAgfVxyXG59XHJcblxyXG4ubWFpbi1za2lsbHMge1xyXG4gIHBhZGRpbmc6IDFyZW07XHJcbiAgZGlzcGxheTogZ3JpZDtcclxuICBnYXA6IDEuNXJlbTtcclxuICBncmlkLWF1dG8tZmxvdzogZGVuc2U7XHJcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoYXV0by1maWxsLCBtaW5tYXgoMzUwcHgsIDFmcikpO1xyXG5cclxuICAubWFpbi1za2lsbDpudGgtY2hpbGQoMSl7IFxyXG4gICAgZ3JpZC1yb3c6IHNwYW4gMztcclxuICB9XHJcbn0iXX0= */"] });
 
 
 /***/ }),
@@ -1084,7 +1082,7 @@ function MainComponent_div_4_a_1_Template(rf, ctx) { if (rf & 1) {
     const thematic_r2 = ctx_r5.$implicit;
     const index_r3 = ctx_r5.index;
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("routerLink", ".")("fragment", thematic_r2.anchor);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("routerLink", ".")("fragment", thematic_r2.uid);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("icon", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction1"](4, _c0, ctx_r4.iconNames[index_r3]));
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
@@ -1105,7 +1103,7 @@ function MainComponent_div_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const thematic_r6 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵattribute"]("id", thematic_r6 == null ? null : thematic_r6.anchor);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵattribute"]("id", thematic_r6 == null ? null : thematic_r6.uid);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("model", thematic_r6);
 } }
@@ -1122,7 +1120,7 @@ class MainComponent {
     }
     ngOnInit() {
         this.dataService.subscribeDataLoaded(this._handleDataLoadedCallback);
-        this.data = this.dataService.getThematics();
+        this.handleDataLoadedCallback(this.dataService.getData());
         console.log('MainComponent-ngOnInit', { data: this.data });
     }
     ngOnDestroy() {
@@ -1174,14 +1172,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "DataService": () => (/* binding */ DataService)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ 4929);
-/* harmony import */ var _prismicio_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @prismicio/client */ 4944);
-/* harmony import */ var _utils_prismic_helper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/prismic.helper */ 8052);
-/* harmony import */ var _utils_languages__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/languages */ 8280);
-/* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/environments/environment */ 2340);
+/* harmony import */ var _utils_languages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/languages */ 8280);
+/* harmony import */ var src_assets_data_data_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/assets/data/data.json */ 6351);
+/* harmony import */ var src_assets_data_image_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/assets/data/image.json */ 2549);
+/* harmony import */ var src_assets_data_culture_en_gb_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/assets/data/culture.en-gb.json */ 3923);
+/* harmony import */ var src_assets_data_culture_fr_fr_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/assets/data/culture.fr-fr.json */ 5835);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 3184);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ 8784);
-
 
 
 
@@ -1189,17 +1185,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class DataService {
-    constructor(httpClient) {
-        this.httpClient = httpClient;
-        this._data = {};
+    constructor() {
+        this._data = {
+            french: Object.assign({}, src_assets_data_data_json__WEBPACK_IMPORTED_MODULE_1__),
+            english: Object.assign({}, src_assets_data_data_json__WEBPACK_IMPORTED_MODULE_1__),
+        };
         this._dataCallbacks = [];
-        this._language = _utils_languages__WEBPACK_IMPORTED_MODULE_1__.Languages.FRENCH;
+        this._language = _utils_languages__WEBPACK_IMPORTED_MODULE_0__.Languages.FRENCH;
         console.log('DataService-ngOnInit');
-        const endpoint = _prismicio_client__WEBPACK_IMPORTED_MODULE_3__.getEndpoint(src_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.prismic.endPoint);
-        const client = _prismicio_client__WEBPACK_IMPORTED_MODULE_3__.createClient(endpoint, {
-            accessToken: src_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.prismic.accesToken,
-        });
-        this.init(client);
+        this.init();
     }
     getLanguage() {
         return this._language;
@@ -1209,6 +1203,9 @@ class DataService {
             this._language = language;
             this.raiseDataLoaded();
         }
+    }
+    getData() {
+        return this._data[this._language];
     }
     getGeneral() {
         var _a;
@@ -1235,76 +1232,33 @@ class DataService {
             }
         });
     }
-    init(client) {
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__awaiter)(this, void 0, void 0, function* () {
-            const loadDataPromises = Object.values(_utils_languages__WEBPACK_IMPORTED_MODULE_1__.Languages).map((value) => (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__awaiter)(this, void 0, void 0, function* () {
-                yield this.LoadDataByLanguage(client, value);
-            }));
-            yield Promise.all(loadDataPromises);
-            console.log('init - Promise all finished');
-            this.raiseDataLoaded();
+    init() {
+        console.log('init', { data: this._data });
+        Object.values(_utils_languages__WEBPACK_IMPORTED_MODULE_0__.Languages).forEach((language) => {
+            this.loadDataByLanguage(this._data[language], language);
         });
+        console.log('init done', { data: this._data });
+        this.raiseDataLoaded();
     }
-    LoadDataByLanguage(client, language) {
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__awaiter)(this, void 0, void 0, function* () {
-            // Do request to prismic
-            const languages = yield client.getAllByType('availablelanguage', {
-                lang: language,
-            });
-            const common = yield client.getByUID('common', 'common', {
-                lang: language,
-            });
-            const skills = yield client.getAllByType('skills', {
-                lang: language,
-            });
-            const experiences = yield client.getAllByType('experience', {
-                lang: language,
-            });
-            const missions = yield client.getAllByType('mission', {
-                lang: language,
-            });
-            const languageModels = _utils_prismic_helper__WEBPACK_IMPORTED_MODULE_0__.PrismicHelper.GetLanguages(languages);
-            const commonModel = _utils_prismic_helper__WEBPACK_IMPORTED_MODULE_0__.PrismicHelper.GetGeneral(common, languageModels);
-            const skillModels = _utils_prismic_helper__WEBPACK_IMPORTED_MODULE_0__.PrismicHelper.GetSkills(skills);
-            const missionModels = _utils_prismic_helper__WEBPACK_IMPORTED_MODULE_0__.PrismicHelper.GetMissions(missions, skillModels);
-            const experienceModels = _utils_prismic_helper__WEBPACK_IMPORTED_MODULE_0__.PrismicHelper.GetExperiences(experiences, missionModels);
-            console.log('init', { skills, experiences, missions });
-            const thematics = yield client.getByUID('thematics', 'thematics', {
-                fetchLinks: `thematics.skills`,
-                lang: language,
-            });
-            let thematicsModel = [];
-            if (thematics) {
-                thematicsModel = _utils_prismic_helper__WEBPACK_IMPORTED_MODULE_0__.PrismicHelper.GetThematics(thematics);
-                if (thematicsModel) {
-                    console.log('init', { thematics: thematicsModel });
-                    yield Promise.all(thematicsModel.map((thematicModel) => (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__awaiter)(this, void 0, void 0, function* () {
-                        console.log('init-thematics', { thematicModel });
-                        if (thematicModel) {
-                            if (thematicModel.experiences) {
-                                thematicModel.experiences = thematicModel.experiences.map((experience) => {
-                                    return experienceModels.find((em) => (em === null || em === void 0 ? void 0 : em.uid) == (experience === null || experience === void 0 ? void 0 : experience.uid));
-                                });
-                            }
-                            if (thematicModel.skills) {
-                                thematicModel.skills = thematicModel.skills.map((skill) => {
-                                    return skillModels.find((s) => (s === null || s === void 0 ? void 0 : s.uid) == (skill === null || skill === void 0 ? void 0 : skill.uid));
-                                });
-                            }
-                        }
-                    })));
-                }
-            }
-            if (commonModel && thematicsModel) {
-                this._data[language] = {
-                    general: commonModel,
-                    thematics: thematicsModel,
-                };
-            }
-        });
+    loadDataByLanguage(data, language) {
+        const languageData = this.getLanguageData(language);
+        if (!languageData) {
+            console.error('loadDataByLanguage - No language data');
+            return;
+        }
+        (0,_utils_languages__WEBPACK_IMPORTED_MODULE_0__.loadDataRecursively)(data, languageData, src_assets_data_image_json__WEBPACK_IMPORTED_MODULE_2__);
+    }
+    getLanguageData(language) {
+        switch (language) {
+            case _utils_languages__WEBPACK_IMPORTED_MODULE_0__.Languages.ENGLISH:
+                return src_assets_data_culture_en_gb_json__WEBPACK_IMPORTED_MODULE_3__;
+            case _utils_languages__WEBPACK_IMPORTED_MODULE_0__.Languages.FRENCH:
+            default:
+                return src_assets_data_culture_fr_fr_json__WEBPACK_IMPORTED_MODULE_4__;
+        }
     }
 }
-DataService.ɵfac = function DataService_Factory(t) { return new (t || DataService)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClient)); };
+DataService.ɵfac = function DataService_Factory(t) { return new (t || DataService)(); };
 DataService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjectable"]({ token: DataService, factory: DataService.ɵfac, providedIn: 'root' });
 
 
@@ -1318,263 +1272,43 @@ DataService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["�
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Languages": () => (/* binding */ Languages)
+/* harmony export */   "Languages": () => (/* binding */ Languages),
+/* harmony export */   "loadDataRecursively": () => (/* binding */ loadDataRecursively)
 /* harmony export */ });
+const PREFIX_LANGUAGE_VALUE = 'text__';
+const PREFIX_IMAGE_VALUE = 'image__';
 var Languages;
 (function (Languages) {
-    Languages["FRENCH"] = "fr-fr";
-    Languages["ENGLISH"] = "en-gb";
+    Languages["FRENCH"] = "french";
+    Languages["ENGLISH"] = "english";
 })(Languages || (Languages = {}));
-
-
-/***/ }),
-
-/***/ 8052:
-/*!*****************************************!*\
-  !*** ./src/app/utils/prismic.helper.ts ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "PrismicHelper": () => (/* binding */ PrismicHelper)
-/* harmony export */ });
-class PrismicHelper {
-    static GetGeneral(prismicValue, languages) {
-        var _a, _b, _c, _d;
-        if (!prismicValue.data) {
-            return undefined;
-        }
-        const result = {
-            firstName: PrismicHelper.getText(prismicValue.data.firstname),
-            lastName: PrismicHelper.getText(prismicValue.data.lastname),
-            avatar: {
-                alt: PrismicHelper.getText((_a = prismicValue.data.avatar) === null || _a === void 0 ? void 0 : _a.alt),
-                url: PrismicHelper.getText((_b = prismicValue.data.avatar) === null || _b === void 0 ? void 0 : _b.url),
-            },
-            pageIcon: {
-                alt: PrismicHelper.getText((_c = prismicValue.data.page_icon) === null || _c === void 0 ? void 0 : _c.alt),
-                url: PrismicHelper.getText((_d = prismicValue.data.page_icon) === null || _d === void 0 ? void 0 : _d.url),
-            },
-            pageTitle: PrismicHelper.getText(prismicValue.data.page_title),
-            title: PrismicHelper.getText(prismicValue.data.title),
-            languages: [],
-        };
-        if (prismicValue.data.languages) {
-            prismicValue.data.languages.forEach((language) => {
-                var _a;
-                console.log('GetGeneral - languages', { language });
-                const languageModel = languages.find((l) => language.language.uid === l.uid);
-                if (languageModel) {
-                    (_a = result.languages) === null || _a === void 0 ? void 0 : _a.push(languageModel);
-                }
-            });
-        }
-        console.log('GetGeneral', { prismicValue, result });
-        return result;
-    }
-    static GetLanguages(prismicValues) {
-        const languages = prismicValues.map((prismicValue) => {
-            var _a;
-            return (_a = this.createLanguage(prismicValue)) !== null && _a !== void 0 ? _a : undefined;
+function loadDataRecursively(data, languageData, imageData) {
+    var _a;
+    if (Array.isArray(data)) {
+        data.forEach((item) => {
+            loadDataRecursively(item, languageData, imageData);
         });
-        console.log('GetLanguages', { prismicValues, languages });
-        return languages;
     }
-    static GetThematics(prismicValue) {
-        var _a, _b;
-        const result = (_b = (_a = prismicValue === null || prismicValue === void 0 ? void 0 : prismicValue.data) === null || _a === void 0 ? void 0 : _a.body) === null || _b === void 0 ? void 0 : _b.map((thematicData) => {
-            const title = PrismicHelper.getText(thematicData.primary.title);
-            const anchor = thematicData.primary.anchor;
-            const icon = thematicData.primary.icon;
-            const thematic = {
-                title,
-                anchor,
-                icon,
-                formations: [],
-                experiences: [],
-                skills: [],
-                hobbies: [],
-            };
-            switch (thematicData.slice_type) {
-                case 'cursus':
-                    thematic.formations = thematicData.items.map((item) => {
-                        const formation = this.createFormation(item);
-                        if (formation) {
-                            return formation;
-                        }
-                        return;
-                    });
-                    break;
-                case 'experiences':
-                    thematic.experiences = thematicData.items.map((item) => {
-                        const experience = this.createExperience(item.experience);
-                        if (experience) {
-                            return experience;
-                        }
-                        return;
-                    });
-                    break;
-                case 'skills':
-                    thematic.skills = thematicData.items.map((item) => {
-                        const skill = this.createSkill(item.skill);
-                        if (skill) {
-                            return skill;
-                        }
-                        return;
-                    });
-                    break;
-                case 'hobbies':
-                    thematic.hobbies = thematicData.items.map((item) => {
-                        const hobby = this.createHobby(item);
-                        if (hobby) {
-                            return hobby;
-                        }
-                        return;
-                    });
-                    break;
-                default:
-                    break;
+    else if (typeof data === 'object') {
+        (_a = Object.entries(data)) === null || _a === void 0 ? void 0 : _a.forEach((entry) => {
+            if (typeof entry[1] === 'string') {
+                data[entry[0]] = loadStringData(entry[1], languageData, imageData);
             }
-            return thematic;
-        });
-        console.log('GetThematics', { prismicValue, result });
-        return result;
-    }
-    static GetExperiences(prismicValues, missions) {
-        const experiences = prismicValues.map((prismicValue) => {
-            var _a;
-            return (_a = this.createExperience(prismicValue)) !== null && _a !== void 0 ? _a : undefined;
-        });
-        prismicValues.forEach((prismicValue) => {
-            var _a;
-            const experience = experiences.find((m) => (m === null || m === void 0 ? void 0 : m.uid) == prismicValue.uid);
-            if (experience && ((_a = prismicValue.data.missions) === null || _a === void 0 ? void 0 : _a.length) > 0) {
-                experience.missions = prismicValue.data.missions.map((m) => {
-                    return missions.find((m2) => (m2 === null || m2 === void 0 ? void 0 : m2.uid) == m.mission.uid);
-                });
+            else if (Array.isArray(entry[1]) || typeof entry[1] === 'object') {
+                loadDataRecursively(entry[1], languageData, imageData);
             }
         });
-        console.log('GetExperiences', { prismicValues, experiences });
-        return experiences;
     }
-    static GetMissions(prismicValues, skills) {
-        const missions = prismicValues.map((prismicValue) => {
-            var _a;
-            return (_a = PrismicHelper.createMission(prismicValue)) !== null && _a !== void 0 ? _a : undefined;
-        });
-        prismicValues.forEach((prismicValue) => {
-            var _a;
-            const mission = missions.find((m) => (m === null || m === void 0 ? void 0 : m.uid) == prismicValue.uid);
-            if (mission && ((_a = prismicValue.data.skills) === null || _a === void 0 ? void 0 : _a.length) > 0) {
-                mission.skills = prismicValue.data.skills.map((s) => {
-                    return skills.find((s2) => (s2 === null || s2 === void 0 ? void 0 : s2.uid) == s.skill.uid);
-                });
-            }
-        });
-        console.log('GetMissions', { prismicValues, missions });
-        return missions;
+}
+function loadStringData(data, languageData, imageData) {
+    if (data.startsWith(PREFIX_LANGUAGE_VALUE)) {
+        return languageData[data.substring(PREFIX_LANGUAGE_VALUE.length)];
     }
-    static GetSkills(prismicValues) {
-        const skills = prismicValues.map((prismicValue) => {
-            var _a;
-            return (_a = this.createSkill(prismicValue)) !== null && _a !== void 0 ? _a : undefined;
-        });
-        prismicValues.forEach((prismicValue) => {
-            var _a;
-            const skill = skills.find((s) => (s === null || s === void 0 ? void 0 : s.uid) == prismicValue.uid);
-            if (skill && ((_a = prismicValue.data.skills) === null || _a === void 0 ? void 0 : _a.length) > 0) {
-                skill.skills = prismicValue.data.skills.map((s) => {
-                    return skills.find((s2) => (s2 === null || s2 === void 0 ? void 0 : s2.uid) == s.skill.uid);
-                });
-            }
-        });
-        console.log('GetSkills', { prismicValues, skills });
-        return skills;
+    else if (data.startsWith(PREFIX_IMAGE_VALUE)) {
+        return imageData[data.substring(PREFIX_IMAGE_VALUE.length)];
     }
-    static createLanguage(languageData) {
-        var _a, _b, _c, _d, _e;
-        const name = PrismicHelper.getText((_a = languageData.data) === null || _a === void 0 ? void 0 : _a.name);
-        const alt = PrismicHelper.getText((_c = (_b = languageData.data) === null || _b === void 0 ? void 0 : _b.icon) === null || _c === void 0 ? void 0 : _c.alt);
-        const url = PrismicHelper.getText((_e = (_d = languageData.data) === null || _d === void 0 ? void 0 : _d.icon) === null || _e === void 0 ? void 0 : _e.url);
-        return {
-            uid: languageData.uid,
-            icon: {
-                alt,
-                url,
-            },
-            code: languageData.lang,
-            name,
-            isLoaded: !!name,
-        };
-    }
-    static createFormation(formationData) {
-        const description = PrismicHelper.getText(formationData.description);
-        const title = PrismicHelper.getText(formationData.title);
-        const from = formationData.start_year;
-        const to = formationData.end_year;
-        return { title, from, description, to };
-    }
-    static createExperience(experienceData) {
-        var _a, _b, _c, _d, _e, _f, _g;
-        const description = PrismicHelper.getText((_a = experienceData.data) === null || _a === void 0 ? void 0 : _a.description);
-        const title = PrismicHelper.getText((_b = experienceData.data) === null || _b === void 0 ? void 0 : _b.title);
-        const from = (_c = experienceData.data) === null || _c === void 0 ? void 0 : _c.start_date;
-        const to = (_d = experienceData.data) === null || _d === void 0 ? void 0 : _d.end_date;
-        const missions = (_g = (_f = (_e = experienceData.data) === null || _e === void 0 ? void 0 : _e.missions) === null || _f === void 0 ? void 0 : _f.map((item) => {
-            if (item.mission) {
-                return PrismicHelper.createMission(item.mission);
-            }
-            return;
-        })) !== null && _g !== void 0 ? _g : [];
-        return {
-            uid: experienceData.uid,
-            title,
-            description,
-            from,
-            to,
-            missions: [],
-            isLoaded: !!title,
-        };
-    }
-    static createMission(experienceData) {
-        var _a, _b;
-        const description = PrismicHelper.getText((_a = experienceData.data) === null || _a === void 0 ? void 0 : _a.description);
-        const title = PrismicHelper.getText((_b = experienceData.data) === null || _b === void 0 ? void 0 : _b.title);
-        return {
-            uid: experienceData.uid,
-            title,
-            description,
-            'short-description': '',
-            skills: [],
-            isLoaded: !!title,
-        };
-    }
-    static createSkill(skillData) {
-        var _a, _b;
-        const title = PrismicHelper.getText((_a = skillData.data) === null || _a === void 0 ? void 0 : _a.title);
-        const score = ((_b = skillData.data) === null || _b === void 0 ? void 0 : _b.score) / 2;
-        return {
-            uid: skillData.uid,
-            title: title,
-            score,
-            isLoaded: !!title,
-        };
-    }
-    static createHobby(formationData) {
-        const image = formationData.image.url;
-        const title = PrismicHelper.getText(formationData.title);
-        return { title, image };
-    }
-    static getText(source) {
-        var _a;
-        if (typeof source === 'string') {
-            return source;
-        }
-        else if (Array.isArray(source) && source.length > 0) {
-            return (_a = source[0]) === null || _a === void 0 ? void 0 : _a.text;
-        }
-        return '';
+    else {
+        return data;
     }
 }
 
@@ -1634,6 +1368,46 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.productio
 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.platformBrowser().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_0__.AppModule)
     .catch(err => console.error(err));
 
+
+/***/ }),
+
+/***/ 3923:
+/*!********************************************!*\
+  !*** ./src/assets/data/culture.en-gb.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = JSON.parse('{"firstName":"Jérémy","lastName":"Dufossé","about-me":"Test","page-title":"Curriculum vitae","title":"Développeur full stack","avatar":"Avatar","page-icon":"CV","language-french":"French","language-english":"English","experiences--title":"Expériences professionnelles","experiences--publicis-title":"Publicis / Epsilon-France","experiences--publicis-description":"Développeur informatique","experiences--publicis--digital-universities-title":"Digital Universities","experiences--publicis--digital-universities-description":"Développement de création de présentation vidéo personnalisable.","experiences--publicis--axa-title":"AxA","experiences--publicis--axa-description":"Maintenance évolutive des sites BonjourDocteur et Angel pour AxA.","experiences--publicis--la-poste-title":"La Poste","experiences--publicis--la-poste-description":"Développement d\'un outil de création de diaporama personnalisable.","experiences--publicis--orange-title":"Orange","experiences--publicis--orange-description":"Développeur au sein de l\'équipe du site web la boutique d\'Orange.","experiences--scotler-title":"Scotler","experiences--scotler-description":"Ingénieur recherche & développeemnt","experiences--scotler--micropross-title":"Mission chez MicroPross","experiences--scotler--micropross-description":"Maintenance applicative de leur produit en version tablette, notamment axé sur l\'amélioration de la fluidité des déplacements sur des graphiques à large données.","experiences--scotler--care-and-comfort-title":"Care-and-Comfort","experiences--scotler--care-and-comfort-description":"Maintenance applicative d\'une interface utilisateur pour promouvoir les services en chambres des patients hospitalisés.\\nL\'application est déployé sur tablette équipé d\'un bras articulé.","experiences--imabiotech-title":"ImaBiotech","experiences--imabiotech-description":"Entreprise d\'analyse scientifique par spectrométrie de masse.","cursus--title":"Cursus","cursus--engineer-title":"Polytech\'Lille, école d\'ingénieur","cursus--engineer-description":"Diplômé en tant qu\'ingénieur \\"Génie informatique et Statistique\\"","cursus--prepa-title":"Lycée Robespierre, prépa","cursus--prepa-description":"Maths sup / Maths spe","cursus--bac-title":"Baccalauréat","skills--title":"Compétences","skills--languages-title":"Langages","skills--csharp-title":"C#","skills--asp-title":"ASP .Net","skills--wpf-title":"WPF","skills--unity-title":"Unity","skills--javascript-title":"JavaScript","skills--reactjs-title":"ReactJS","skills--angular-title":"Angular","skills--jquery-title":"jQuery","skills--web-title":"Web","skills--html-title":"HTML","skills--css-title":"CSS","skills--sql-title":"SQL / mySQL","skills--os-title":"Système d\'exploitation","skills--windows-title":"Windows","skills--unix-title":"Unix","skills--methodology-title":"Méthodologie","skills--agile-title":"Agile","skills--kanban-title":"Kanban","skills--patterns-title":"Patterns","skills--mvc-title":"MVC","skills--mvp-title":"MVP","skills--mvvm-title":"MVVM","skills--linguistic-title":"Connaissances linguistiques","skills--french-title":"French","skills--english-title":"English","skills--spanish-title":"Espagnol","skills--source-code-title":"Source code manager","skills--tfs-title":"TFS","skills--git-title":"GIT","skills--software-title":"Software","skills--vs-title":"Visual Studio","skills--vsc-title":"Visual Studio Code","skills--ssms-title":"SQL Server Management Studio","skills--iis-title":"IIS","skills--postman-title":"Postman","hobbies--title":"Loisirs","hobbies--development":"Programmation","hobbies--movies":"Films","hobbies--music":"Musiques","hobbies--sport":"Sport","hobbies--videogames":"Jeux vidéos"}');
+
+/***/ }),
+
+/***/ 5835:
+/*!********************************************!*\
+  !*** ./src/assets/data/culture.fr-fr.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = JSON.parse('{"firstName":"Jérémy","lastName":"Dufossé","about-me":"Test","page-title":"Curriculum vitae","title":"Développeur full stack","avatar":"Avatar","page-icon":"CV","language-french":"Français","language-english":"Anglais","experiences--title":"Expériences professionnelles","experiences--publicis-title":"Publicis / Epsilon-France","experiences--publicis-description":"Développeur informatique","experiences--publicis--digital-universities-title":"Digital Universities","experiences--publicis--digital-universities-description":"Développement de création de présentation vidéo personnalisable.","experiences--publicis--axa-title":"AxA","experiences--publicis--axa-description":"Maintenance évolutive des sites BonjourDocteur et Angel pour AxA.","experiences--publicis--la-poste-title":"La Poste","experiences--publicis--la-poste-description":"Développement d\'un outil de création de diaporama personnalisable.","experiences--publicis--orange-title":"Orange","experiences--publicis--orange-description":"Développeur au sein de l\'équipe du site web la boutique d\'Orange.","experiences--scotler-title":"Scotler","experiences--scotler-description":"Ingénieur recherche & développeemnt","experiences--scotler--micropross-title":"Mission chez MicroPross","experiences--scotler--micropross-description":"Maintenance applicative de leur produit en version tablette, notamment axé sur l\'amélioration de la fluidité des déplacements sur des graphiques à large données.","experiences--scotler--care-and-comfort-title":"Care-and-Comfort","experiences--scotler--care-and-comfort-description":"Maintenance applicative d\'une interface utilisateur pour promouvoir les services en chambres des patients hospitalisés.\\nL\'application est déployé sur tablette équipé d\'un bras articulé.","experiences--imabiotech-title":"ImaBiotech","experiences--imabiotech-description":"Entreprise d\'analyse scientifique par spectrométrie de masse.","cursus--title":"Cursus","cursus--engineer-title":"Polytech\'Lille, école d\'ingénieur","cursus--engineer-description":"Diplômé en tant qu\'ingénieur \\"Génie informatique et Statistique\\"","cursus--prepa-title":"Lycée Robespierre, prépa","cursus--prepa-description":"Maths sup / Maths spe","cursus--bac-title":"Baccalauréat","skills--title":"Compétences","skills--languages-title":"Langages","skills--csharp-title":"C#","skills--asp-title":"ASP .Net","skills--wpf-title":"WPF","skills--unity-title":"Unity","skills--javascript-title":"JavaScript","skills--reactjs-title":"ReactJS","skills--angular-title":"Angular","skills--jquery-title":"jQuery","skills--web-title":"Web","skills--html-title":"HTML","skills--css-title":"CSS","skills--sql-title":"SQL / mySQL","skills--os-title":"Système d\'exploitation","skills--windows-title":"Windows","skills--unix-title":"Unix","skills--methodology-title":"Méthodologie","skills--agile-title":"Agile","skills--kanban-title":"Kanban","skills--patterns-title":"Patterns","skills--mvc-title":"MVC","skills--mvp-title":"MVP","skills--mvvm-title":"MVVM","skills--linguistic-title":"Connaissances linguistiques","skills--french-title":"Français","skills--english-title":"Anglais","skills--spanish-title":"Espagnol","skills--source-code-title":"Source code manager","skills--tfs-title":"TFS","skills--git-title":"GIT","skills--software-title":"Software","skills--vs-title":"Visual Studio","skills--vsc-title":"Visual Studio Code","skills--ssms-title":"SQL Server Management Studio","skills--iis-title":"IIS","skills--postman-title":"Postman","hobbies--title":"Loisirs","hobbies--development":"Programmation","hobbies--movies":"Films","hobbies--music":"Musiques","hobbies--sport":"Sport","hobbies--videogames":"Jeux vidéos"}');
+
+/***/ }),
+
+/***/ 6351:
+/*!***********************************!*\
+  !*** ./src/assets/data/data.json ***!
+  \***********************************/
+/***/ ((module) => {
+
+module.exports = JSON.parse('{"general":{"firstName":"Jérémy","lastName":"Dufossé","avatar":{"alt":"text__avatar","url":"image__avatar"},"pageIcon":{"alt":"text__page-icon","url":"image__page-icon"},"pageTitle":"text__page-title","title":"text__title","about":"text__about-me","languages":[{"uid":"french","icon":{"alt":"fr","url":"image__french-flag"},"code":"fr-fr","name":"text__language-french"},{"uid":"english","icon":{"alt":"en","url":"image__british-flag"},"code":"en-gb","name":"text__language-english"}]},"thematics":[{"uid":"experiences","title":"text__experiences--title","icon":"person-digging","experiences":[{"uid":"publicis","title":"text__experiences--publicis-title","description":"text__experiences--publicis-description","from":"2016-07-18","missions":[{"uid":"publicis--digital-universities","title":"text__experiences--publicis--digital-universities-title","description":"text__experiences--publicis--digital-universities-description","skills":[]},{"uid":"publicis--axa","title":"text__experiences--publicis--axa-title","description":"text__experiences--publicis--axa-description"},{"uid":"publicis--la-poste","title":"text__experiences--publicis--la-poste-title","description":"text__experiences--publicis--la-poste-description"},{"uid":"publicis--orange","title":"text__experiences--publicis--orange-title","description":"text__experiences--publicis--orange-description","skills":[]}]},{"uid":"scotler","title":"text__experiences--scotler-title","description":"text__experiences--description","from":"2013-07-22","to":"2016-07-14","missions":[{"uid":"scotler--micropross","title":"text__experiences--scotler--micropross-title","description":"text__experiences--scotler--micropross-description","skills":[]},{"uid":"scotler--care-and-comfort","title":"text__experiences--scotler--care-and-comfort-title","description":"text__experiences--scotler--care-and-comfort-description","skills":[]}]},{"uid":"imabiotech","title":"text__experiences--imabiotech-title","description":"text__experiences--imabiotech-description","from":"2012-12-03","to":"2013-06-28","missions":[]}]},{"uid":"cursus","title":"text__cursus--title","icon":"graduation-cap","formations":[{"title":"text__cursus--title","description":"text__cursus--description","from":"2008","to":"2013"},{"title":"text__cursus--title","description":"text__cursus--prepa-description","from":"2006","to":"2008"},{"title":"text__cursus--bac-title","from":"2006","to":"2006"}]},{"uid":"skills","title":"text__skills--title","icon":"list-check","skills":[{"uid":"languages","title":"text__skills--languages-title","skills":[{"uid":"csharp","title":"text__skills--csharp-title","score":4.5,"skills":[{"uid":"asp.net","title":"text__skills--asp-title","score":0},{"uid":"wpf","title":"text__skills--wpf-title","score":3.5},{"uid":"unity","title":"text__skills--unity-title","score":2.5}]},{"uid":"javascript","title":"text__skills--javascript-title","score":4,"skills":[{"uid":"reactjs","title":"text__skills--reactjs-title","score":4},{"uid":"angular","title":"text__skills--angular-title","score":2.5},{"uid":"jquery","title":"text__skills--jquery-title","score":2.5}]},{"uid":"web","title":"text__skills--web-title","skills":[{"uid":"html","title":"text__skills--html-title","score":4},{"uid":"css","title":"text__skills--css-title","score":2.5}]},{"uid":"sql","title":"text__skills--sql-title","score":3.5}]},{"uid":"os","title":"text__skills--os-title","score":0,"skills":[{"uid":"windows","title":"text__skills--windows-title","score":3.5},{"uid":"unix","title":"text__skills--unix-title","score":1.5}]},{"uid":"methodology","title":"text__skills--methodology-title","score":0,"skills":[{"uid":"agile","title":"text__skills--agile-title","score":0},{"uid":"kanban","title":"text__skills--kanban-title","score":0}]},{"uid":"patterns","title":"text__skills--patterns-title","score":0,"skills":[{"uid":"mvc","title":"text__skills--mvc-title","score":0},{"uid":"mvp","title":"text__skills--mvp-title","score":0},{"uid":"mvvm","title":"text__skills--mvvm-title","score":0}]},{"uid":"linguistic","title":"text__skills--linguistic-title","score":0,"skills":[{"uid":"french","title":"text__skills--french-title","score":4.5},{"uid":"english","title":"text__skills--english-title","score":3.5},{"uid":"spanish","title":"text__skills--spanish-title","score":1}]},{"uid":"source-code","title":"text__skills--source-code-title","skills":[{"uid":"tfs","title":"text__skills--tfs-title"},{"uid":"git","title":"text__skills--git-title"}]},{"uid":"software","title":"text__skills--software-title","skills":[{"uid":"vs","title":"text__skills--vs-title"},{"uid":"vsc","title":"text__skills--vsc-title"},{"uid":"ssms","title":"text__skills--ssms-title"},{"uid":"iis","title":"text__skills--iis-title"},{"uid":"postman","title":"text__skills--postman-title"}]}]},{"uid":"hobbies","title":"text__hobbies--title","icon":"gamepad","hobbies":[{"title":"text__hobbies--sport","image":"image__hobbies--sport"},{"title":"text__hobbies--videogames","image":"image__hobbies--videogames"},{"title":"text__hobbies--music","image":"image__hobbies--music"},{"title":"text__hobbies--movies","image":"image__hobbies--movies"},{"title":"text__hobbies--development","image":"image__hobbies--development"}]}]}');
+
+/***/ }),
+
+/***/ 2549:
+/*!************************************!*\
+  !*** ./src/assets/data/image.json ***!
+  \************************************/
+/***/ ((module) => {
+
+module.exports = JSON.parse('{"page-icon":"/images/curriculum-vitae.png","avatar":"/images/test.png","french-flag":"/images/french-flag.jpg","british-flag":"/images/british-flag.jpg","hobbies--development":"/images/hobby-development.jpg","hobbies--movies":"/images/hobby-movies.jpg","hobbies--music":"/images/hobby-music.jpg","hobbies--sport":"/images/hobby-sport.jpg","hobbies--videogames":"/images/hobby-videogames.jpg"}');
 
 /***/ })
 

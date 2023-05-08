@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import * as model from '../types/data';
 import { Languages, loadDataRecursively } from '../utils/languages';
 
-import data from 'src/assets/data.json';
+import data from 'src/assets/data/data.json';
 import images from 'src/assets/data/image.json';
 import english from 'src/assets/data/culture.en-gb.json';
 import french from 'src/assets/data/culture.fr-fr.json';
