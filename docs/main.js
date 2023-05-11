@@ -66,28 +66,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/platform-browser */ 318);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/common/http */ 8784);
-/* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ 9397);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/router */ 2816);
-/* harmony import */ var angular_responsive_carousel__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! angular-responsive-carousel */ 6406);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/platform-browser */ 318);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common/http */ 8784);
+/* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ 9397);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/router */ 2816);
+/* harmony import */ var angular_responsive_carousel__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! angular-responsive-carousel */ 6406);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 158);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _pages_main_main_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/main/main.component */ 440);
-/* harmony import */ var _pages_job_job_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/job/job.component */ 2843);
-/* harmony import */ var _pages_four_oh_four_four_oh_four_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/four-oh-four/four-oh-four.component */ 872);
-/* harmony import */ var _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/layout/layout.component */ 9520);
-/* harmony import */ var _components_thematic_thematic_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/thematic/thematic.component */ 3816);
-/* harmony import */ var _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/experience/experience.component */ 6228);
-/* harmony import */ var _components_mission_mission_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/mission/mission.component */ 2098);
-/* harmony import */ var _components_hobby_hobby_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/hobby/hobby.component */ 9570);
-/* harmony import */ var _components_skill_skill_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/skill/skill.component */ 1269);
-/* harmony import */ var _components_formation_formation_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/formation/formation.component */ 5445);
-/* harmony import */ var _components_formation_formations_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/formation/formations.component */ 572);
-/* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/footer/footer.component */ 4662);
-/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/header/header.component */ 3646);
-/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./services/data.service */ 2468);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _pages_four_oh_four_four_oh_four_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/four-oh-four/four-oh-four.component */ 872);
+/* harmony import */ var _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/layout/layout.component */ 9520);
+/* harmony import */ var _components_thematic_thematic_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/thematic/thematic.component */ 3816);
+/* harmony import */ var _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/experience/experience.component */ 6228);
+/* harmony import */ var _components_mission_mission_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/mission/mission.component */ 2098);
+/* harmony import */ var _components_hobby_hobby_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/hobby/hobby.component */ 9570);
+/* harmony import */ var _components_skill_skill_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/skill/skill.component */ 1269);
+/* harmony import */ var _components_formation_formation_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/formation/formation.component */ 5445);
+/* harmony import */ var _components_formation_formations_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/formation/formations.component */ 572);
+/* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/footer/footer.component */ 4662);
+/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/header/header.component */ 3646);
+/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./services/data.service */ 2468);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/core */ 3184);
 
 
 
@@ -108,18 +107,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 // Services
 
 
 
 const routes = [
-    { path: 'fr', component: _pages_main_main_component__WEBPACK_IMPORTED_MODULE_2__.MainComponent },
-    { path: 'en', component: _pages_main_main_component__WEBPACK_IMPORTED_MODULE_2__.MainComponent },
-    { path: 'experience/:id', component: _pages_job_job_component__WEBPACK_IMPORTED_MODULE_3__.JobComponent },
-    { path: 'not-found', component: _pages_four_oh_four_four_oh_four_component__WEBPACK_IMPORTED_MODULE_4__.FourOhFourComponent },
-    { path: '', redirectTo: '/fr', pathMatch: 'full' },
-    { path: '**', redirectTo: 'not-found' },
+    { path: '', component: _pages_main_main_component__WEBPACK_IMPORTED_MODULE_2__.MainComponent },
+    { path: '**', component: _pages_four_oh_four_four_oh_four_component__WEBPACK_IMPORTED_MODULE_3__.FourOhFourComponent },
 ];
 const routerOptions = {
     scrollPositionRestoration: 'enabled',
@@ -129,30 +123,29 @@ const routerOptions = {
 class AppModule {
 }
 AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(); };
-AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent] });
-AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineInjector"]({ providers: [_services_data_service__WEBPACK_IMPORTED_MODULE_15__.DataService], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_17__.BrowserModule,
-        _angular_router__WEBPACK_IMPORTED_MODULE_18__.RouterModule.forRoot(routes, routerOptions),
+AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent] });
+AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineInjector"]({ providers: [_services_data_service__WEBPACK_IMPORTED_MODULE_14__.DataService], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_16__.BrowserModule,
+        _angular_router__WEBPACK_IMPORTED_MODULE_17__.RouterModule.forRoot(routes, routerOptions),
         _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_19__.HttpClientModule,
-        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_20__.FontAwesomeModule,
-        angular_responsive_carousel__WEBPACK_IMPORTED_MODULE_21__.IvyCarouselModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpClientModule,
+        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_19__.FontAwesomeModule,
+        angular_responsive_carousel__WEBPACK_IMPORTED_MODULE_20__.IvyCarouselModule] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent,
         _pages_main_main_component__WEBPACK_IMPORTED_MODULE_2__.MainComponent,
-        _pages_job_job_component__WEBPACK_IMPORTED_MODULE_3__.JobComponent,
-        _pages_four_oh_four_four_oh_four_component__WEBPACK_IMPORTED_MODULE_4__.FourOhFourComponent,
-        _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_5__.LayoutComponent,
-        _components_thematic_thematic_component__WEBPACK_IMPORTED_MODULE_6__.ThematicComponent,
-        _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_7__.ExperienceComponent,
-        _components_hobby_hobby_component__WEBPACK_IMPORTED_MODULE_9__.HobbyComponent,
-        _components_skill_skill_component__WEBPACK_IMPORTED_MODULE_10__.SkillComponent,
-        _components_formation_formation_component__WEBPACK_IMPORTED_MODULE_11__.FormationComponent,
-        _components_formation_formations_component__WEBPACK_IMPORTED_MODULE_12__.FormationsComponent,
-        _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_13__.FooterComponent,
-        _components_header_header_component__WEBPACK_IMPORTED_MODULE_14__.HeaderComponent,
-        _components_mission_mission_component__WEBPACK_IMPORTED_MODULE_8__.MissionComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_17__.BrowserModule, _angular_router__WEBPACK_IMPORTED_MODULE_18__.RouterModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_19__.HttpClientModule,
-        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_20__.FontAwesomeModule,
-        angular_responsive_carousel__WEBPACK_IMPORTED_MODULE_21__.IvyCarouselModule] }); })();
+        _pages_four_oh_four_four_oh_four_component__WEBPACK_IMPORTED_MODULE_3__.FourOhFourComponent,
+        _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_4__.LayoutComponent,
+        _components_thematic_thematic_component__WEBPACK_IMPORTED_MODULE_5__.ThematicComponent,
+        _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_6__.ExperienceComponent,
+        _components_hobby_hobby_component__WEBPACK_IMPORTED_MODULE_8__.HobbyComponent,
+        _components_skill_skill_component__WEBPACK_IMPORTED_MODULE_9__.SkillComponent,
+        _components_formation_formation_component__WEBPACK_IMPORTED_MODULE_10__.FormationComponent,
+        _components_formation_formations_component__WEBPACK_IMPORTED_MODULE_11__.FormationsComponent,
+        _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__.FooterComponent,
+        _components_header_header_component__WEBPACK_IMPORTED_MODULE_13__.HeaderComponent,
+        _components_mission_mission_component__WEBPACK_IMPORTED_MODULE_7__.MissionComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_16__.BrowserModule, _angular_router__WEBPACK_IMPORTED_MODULE_17__.RouterModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpClientModule,
+        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_19__.FontAwesomeModule,
+        angular_responsive_carousel__WEBPACK_IMPORTED_MODULE_20__.IvyCarouselModule] }); })();
 
 
 /***/ }),
@@ -1013,35 +1006,6 @@ FourOhFourComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE
 
 /***/ }),
 
-/***/ 2843:
-/*!********************************************!*\
-  !*** ./src/app/pages/job/job.component.ts ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "JobComponent": () => (/* binding */ JobComponent)
-/* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 3184);
-/* harmony import */ var _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/layout/layout.component */ 9520);
-
-
-class JobComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-}
-JobComponent.ɵfac = function JobComponent_Factory(t) { return new (t || JobComponent)(); };
-JobComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: JobComponent, selectors: [["app-job"]], decls: 3, vars: 0, template: function JobComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "app-layout")(1, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "job works!");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    } }, dependencies: [_components_layout_layout_component__WEBPACK_IMPORTED_MODULE_0__.LayoutComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJqb2IuY29tcG9uZW50LnNjc3MifQ== */"] });
-
-
-/***/ }),
-
 /***/ 440:
 /*!**********************************************!*\
   !*** ./src/app/pages/main/main.component.ts ***!
@@ -1330,10 +1294,6 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    prismic: {
-        endPoint: 'jdufosse',
-        accesToken: 'MC5ZcC0takJFQUFDQUF5Y2lX.77-977-977-977-9bwDvv73vv73vv73vv73vv70CP--_ve-_ve-_vSwMA--_vSHvv73vv71a77-977-977-977-9Ru-_vWVy',
-    }
 };
 /*
  * For easier debugging in development mode, you can import the following file

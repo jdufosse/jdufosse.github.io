@@ -1,11 +1,11 @@
 {
-  "page-icon": "/images/curriculum-vitae.png",
-  "avatar": "/images/test.png",
-  "french-flag": "/images/french-flag.jpg",
-  "british-flag": "/images/british-flag.jpg",
-  "hobbies--development": "/images/hobby-development.jpg",
-  "hobbies--movies": "/images/hobby-movies.jpg",
-  "hobbies--music": "/images/hobby-music.jpg",
-  "hobbies--sport": "/images/hobby-sport.jpg",
-  "hobbies--videogames": "/images/hobby-videogames.jpg"
+  "page-icon": "/assets/images/curriculum-vitae.png",
+  "avatar": "/assets/images/test.png",
+  "french-flag": "/assets/images/french-flag.jpg",
+  "british-flag": "/assets/images/british-flag.jpg",
+  "hobbies--development": "/assets/images/hobby-development.jpg",
+  "hobbies--movies": "/assets/images/hobby-movies.jpg",
+  "hobbies--music": "/assets/images/hobby-music.jpg",
+  "hobbies--sport": "/assets/images/hobby-sport.jpg",
+  "hobbies--videogames": "/assets/images/hobby-videogames.jpg"
 }

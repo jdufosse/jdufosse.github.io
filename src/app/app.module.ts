@@ -9,7 +9,6 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
-import { JobComponent } from './pages/job/job.component';
 import { FourOhFourComponent } from './pages/four-oh-four/four-oh-four.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ThematicComponent } from './components/thematic/thematic.component';
@@ -26,12 +25,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { DataService } from './services/data.service';
 
 const routes: Routes = [
-  { path: 'fr', component: MainComponent },
-  { path: 'en', component: MainComponent },
-  { path: 'experience/:id', component: JobComponent },
-  { path: 'not-found', component: FourOhFourComponent },
-  { path: '', redirectTo: '/fr', pathMatch: 'full'  },
-  { path: '**', redirectTo: 'not-found' },
+  { path: '', component: MainComponent },
+  { path: '**', component: FourOhFourComponent },
 ];
 
 const routerOptions: ExtraOptions = {
@@ -44,7 +39,6 @@ const routerOptions: ExtraOptions = {
   declarations: [
     AppComponent,
     MainComponent,
-    JobComponent,
     FourOhFourComponent,
     LayoutComponent,
     ThematicComponent,
